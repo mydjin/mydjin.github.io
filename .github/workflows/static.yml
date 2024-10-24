@@ -43,7 +43,7 @@ jobs:
 
      # 运行构建脚本
       - name: Run Build Script
-        run: npm run docs:build
+        run: npm run build
         
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
