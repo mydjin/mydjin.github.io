@@ -15,17 +15,17 @@ jobs:
     # 每个任务下的运行步骤，短横杠 - 表示一个步骤，从上至下依次执行。
     steps:
       - name: checkout # 检出代码
-      - uses: actions/checkout@v2 # 使用 actions/checkout action 检出代码到工作空间。
+        uses: actions/checkout@v2 # 使用 actions/checkout action 检出代码到工作空间。
       
       # 这一步安装 Node.js v16。
       - name: Use Node.js
-      - uses: actions/setup-node@v1
+        uses: actions/setup-node@v1
         with:
           node-version: '16'
             
      # 缓存 npm node_modules
       - name: Cache dependencies
-      - uses: actions/cache@v3
+        uses: actions/cache@v3
         id: npm-cache
         with:
           path: |
@@ -43,10 +43,10 @@ jobs:
 
      # 运行构建脚本
       - name: Run Build Script
-      - run: npm run docs:build
+        run: npm run docs:build
         
       - name: Deploy
-      - uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
         # env:
           # 部署到 main 分支
