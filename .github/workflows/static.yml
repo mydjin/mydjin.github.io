@@ -48,6 +48,7 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
+          lfs: true
         # env:
           # 部署到 main 分支
           BRANCH: main
