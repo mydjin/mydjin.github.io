@@ -4,8 +4,8 @@ import sidebar from "./sidebar";
 import footer from "./footer";
 import extraSideBar from "./extraSideBar";
 
-const author = "程序员鱼皮";
-const domain = "https://codefather.cn";
+const author = "docccs";
+const domain = "https://mydjin.github.io";
 const tags = ["程序员", "编程", "计算机"];
 
 export default defineConfig({
@@ -20,7 +20,7 @@ export default defineConfig({
       {
         name: "keywords",
         content:
-          "程序员鱼皮, 编程学习路线, 编程知识百科, Java, 编程导航, 前端, 开发, 编程分享, 项目, IT, 求职, 面经",
+          "知识扫盲, 编程学习路线, 编程知识百科, Java, 编程导航, 前端, 开发, 编程分享, 项目, IT, 行业认知, 求职, 面经",
       },
     ],
     // 百度统计
