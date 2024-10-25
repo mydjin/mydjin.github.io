@@ -48,7 +48,8 @@ jobs:
         run: npm run docs:build
         
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        # uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: crazy-max/ghaction-github-pages@v2
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # ACCESS_TOKEN 是创建的 Secret 名称，替换为你自己创建的名称
         with:
