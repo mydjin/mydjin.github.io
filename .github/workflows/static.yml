@@ -54,6 +54,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # ACCESS_TOKEN 是创建的 Secret 名称，替换为你自己创建的名称
         with:
           lfs: true
+          build_dir: .vuepress/dist # vuepress 生成的静态文件存放的地方
         # env:
           # 部署到 main 分支
           BRANCH: main
