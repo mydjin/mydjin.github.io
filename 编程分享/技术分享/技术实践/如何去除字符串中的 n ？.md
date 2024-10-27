@@ -1,10 +1,10 @@
 # 如何去除字符串中的 "\n" ？
 
-> 本文作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
+> 本文作者：[程序员mydjin](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
 >
 > 本站地址：[https://codefather.cn](https://codefather.cn)
 
-大家好，我是鱼皮，今天分享一个小知识。
+大家好，我是mydjin，今天分享一个小知识。
 
 我最近负责的工作是设计一个 SQL 解析引擎。简单来说，就是将一个 SQL 表达式字符串，解析为一颗对象树，从而执行查询等一系列操作。
 

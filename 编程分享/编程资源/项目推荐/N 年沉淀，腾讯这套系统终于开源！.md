@@ -1,10 +1,10 @@
 # N 年沉淀，腾讯这套系统终于开源！
 
-> 本文作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
+> 本文作者：[程序员mydjin](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
 >
 > 本站地址：[https://codefather.cn](https://codefather.cn)
 
-大家好，我是鱼皮，前段时间给大家介绍了字节跳动开源的两套设计系统，分别是 Arco Design 和抖音 Semi Design。
+大家好，我是mydjin，前段时间给大家介绍了字节跳动开源的两套设计系统，分别是 Arco Design 和抖音 Semi Design。
 
 而就在几天前，腾讯终于也开源了自家的设计系统 `TDesgin` ！这次，终于能介绍自己公司的项目了。
 
@@ -47,6 +47,6 @@
 ------
 
 
-以上就是本期分享，我是鱼皮，最后求个 **点赞 + 在看** ，这将是我持续创作的最大动力，谢谢 🙏
+以上就是本期分享，我是mydjin，最后求个 **点赞 + 在看** ，这将是我持续创作的最大动力，谢谢 🙏
 
 ![](https://pic.yupi.icu/5563/202311091147822.png)

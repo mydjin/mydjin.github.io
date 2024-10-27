@@ -1,6 +1,6 @@
 # 使用 Java 程序自动构建 jar 包
 
-> 作者：[程序员鱼皮](https://space.bilibili.com/12890453/)，[编程导航星球](https://yuyuanweb.feishu.cn/wiki/VC1qwmX9diCBK3kidyec74vFnde) 编号 1
+> 作者：[程序员mydjin](https://space.bilibili.com/12890453/)，[编程导航星球](https://yuyuanweb.feishu.cn/wiki/VC1qwmX9diCBK3kidyec74vFnde) 编号 1
 
 
 
@@ -24,7 +24,7 @@
 
 
 
-安装完成后，打开终端，执行 `mvn -v` 命令检测是否安装成功，鱼皮本地的环境是 Maven 3.9.5：
+安装完成后，打开终端，执行 `mvn -v` 命令检测是否安装成功，mydjin本地的环境是 Maven 3.9.5：
 
 ![](https://pic.yupi.icu/1/1701156777614-c96c137e-7465-4795-adfb-258bbaa22b21.png)
 

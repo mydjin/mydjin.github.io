@@ -1,10 +1,10 @@
 # 美好的周末，又改了一天 Bug。。
 
-> 本文作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
+> 本文作者：[程序员mydjin](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
 >
 > 本站地址：[https://codefather.cn](https://codefather.cn)
 
-大家好，我是瘫软的鱼皮。如标题所说，今天我改了一天 Bug。。。
+大家好，我是瘫软的mydjin。如标题所说，今天我改了一天 Bug。。。
 
 ![](https://pic.yupi.icu/5563/202311041258873.png)
 

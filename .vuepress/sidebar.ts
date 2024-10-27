@@ -12,7 +12,7 @@ export default {
     "/学习路线/": roadmapSideBar,
     "/项目实战/": projectSideBar,
     "/编程导航/": codeNavSideBar,
-    "/产品服务/": productSideBar,
+    // "/产品服务/": productSideBar,
     "/知识碎片/": knowledgeSideBar,
     "/自学之路/": selfStudySideBar,
     "/编程分享/": programmingShareSideBar,

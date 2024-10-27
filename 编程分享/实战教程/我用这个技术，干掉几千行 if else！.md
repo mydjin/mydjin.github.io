@@ -1,10 +1,10 @@
 # 我用这个技术，干掉几千行 if else！
 
-> 本文作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
+> 本文作者：[程序员mydjin](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
 >
 > 本站地址：[https://codefather.cn](https://codefather.cn)
 
-大家好我是鱼皮，今天我将用一个有趣的小例子来带大家入门企业开发中非常实用的技术—— 工作流，用好这个技术，可以帮你消除项目中大量的 if else 代码，让你的项目更好维护和扩展。
+大家好我是mydjin，今天我将用一个有趣的小例子来带大家入门企业开发中非常实用的技术—— 工作流，用好这个技术，可以帮你消除项目中大量的 if else 代码，让你的项目更好维护和扩展。
 
 > 本文视频演示：https://www.bilibili.com/video/BV13d4y1o7iB/
 

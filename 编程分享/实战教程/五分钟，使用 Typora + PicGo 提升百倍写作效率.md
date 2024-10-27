@@ -1,6 +1,6 @@
 # 五分钟，使用 Typora + PicGo 提升百倍写作效率
 
-> 本文作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
+> 本文作者：[程序员mydjin](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
 >
 > 本站地址：[https://codefather.cn](https://codefather.cn)
 
@@ -44,7 +44,7 @@ Typora是一款简洁的Markdown文本编辑器，能够帮助我们自动利用
 
 Typora的使用非常简单，安装好之后，就可以直接上手写作了~
 
-**但是，鱼皮使用Typora写了一段时间的文章后，发现一个比较麻烦的事。**
+**但是，mydjin使用Typora写了一段时间的文章后，发现一个比较麻烦的事。**
 
 对于博主来说，写一篇文章要花很多时间，当然也希望文章被更多人看到，因此会把文章发布到网上，分享给大家。更有甚者，会把同一篇文章发布到各个不同的平台，比如B站、知乎等。
 

@@ -1,12 +1,12 @@
 # 大厂的 SDK 写法，偷学到了！
 
-> 本文作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
+> 本文作者：[程序员mydjin](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
 >
 > 本站地址：[https://codefather.cn](https://codefather.cn)
 
 > 自己动手写 SDK 的经验技巧分享
 
-大家好，我是鱼皮。
+大家好，我是mydjin。
 
 最近因为工作需要，自己动手写了一些项目的通用 SDK。在编写的过程中，我阅读和参考了不少公司中其他大佬写的 SDK，也总结了一些开发 SDK 的经验和技巧，给大家分享下~
 
@@ -257,6 +257,6 @@ String checkValid(StringBuilder str)
 
 以上就是本期分享，建议学编程的同学多自己动手写 SDK，并且按照本文的总结去优化它，对提升编程能力真的很有帮助！
 
-我是鱼皮，最后求个 **点赞 + 在看** ，这将是我持续创作的最大动力，谢谢 🙏
+我是mydjin，最后求个 **点赞 + 在看** ，这将是我持续创作的最大动力，谢谢 🙏
 
 ![](https://pic.yupi.icu/5563/202311060913314.png)

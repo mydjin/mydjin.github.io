@@ -1,6 +1,6 @@
-# Java 学习路线 by 程序员鱼皮
+# Java 学习路线 by 程序员mydjin
 
-> 本文作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
+> 本文作者：[程序员mydjin](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
 >
 > 本站地址：[https://codefather.cn](https://codefather.cn)
 
@@ -338,7 +338,7 @@ Java 8 是如今企业开发中最主流的 Java 稳定版本，在这个版本�
    - 老杜 - mysql入门基础 + 数据库实战：[https://www.bilibili.com/video/BV1Vy4y1z7EX](https://www.bilibili.com/video/BV1Vy4y1z7EX) （内容相对精炼，有习题）
    - 尚硅谷 - MySQL基础教程：[https://www.bilibili.com/video/BV1xW411u7ax](https://www.bilibili.com/video/BV1xW411u7ax) （小姐姐讲课，但感觉音质一般）
 - 在线练习 
-   - ⭐ 鱼皮的闯关式 SQL 自学网：[http://sqlmother.yupi.icu/](http://sqlmother.yupi.icu/)
+   - ⭐ mydjin的闯关式 SQL 自学网：[http://sqlmother.yupi.icu/](http://sqlmother.yupi.icu/)
    - ⭐ SQL 在线运行：[https://www.bejson.com/runcode/sql/](https://www.bejson.com/runcode/sql/)
 - 文档 
    - SQL - 菜鸟教程：[https://www.runoob.com/sql/sql-tutorial.html](https://www.runoob.com/sql/sql-tutorial.html)
@@ -473,7 +473,7 @@ Maven / Gradle 当成工具用就好，面试基本不问，跟着框架教程�
    -  ⭐ 雷丰阳 2021 版 SpringBoot2 零基础入门：[https://www.bilibili.com/video/BV19K4y1L7MT](https://www.bilibili.com/video/BV19K4y1L7MT) 
    -  尚硅谷 - SpringSecurity 框架教程：[https://www.bilibili.com/video/BV15a411A7kP](https://www.bilibili.com/video/BV15a411A7kP) 
 
-学习完框架后，即可跟着鱼皮的原创项目教程系列边学边做项目。用项目驱动学习，更快地掌握后端必学技术，并直接写在简历上：[项目实战 - 鱼皮原创项目教程系列](https://yuyuanweb.feishu.cn/wiki/SePYwTc9tipQiCktw7Uc7kujnCd) 。
+学习完框架后，即可跟着mydjin的原创项目教程系列边学边做项目。用项目驱动学习，更快地掌握后端必学技术，并直接写在简历上：[项目实战 - mydjin原创项目教程系列](https://yuyuanweb.feishu.cn/wiki/SePYwTc9tipQiCktw7Uc7kujnCd) 。
 
 ### 🌘 开发规范（3 天）
 
@@ -618,7 +618,7 @@ Git 和它可不一样，是一个版本控制工具，可以更好地管理和�
    - 宝塔 Linux 面板：[https://www.bt.cn/](https://www.bt.cn/)
 
 ### 🌘 前端基础（14 天）
-详情请参考鱼皮原创的前端学习路线：[https://mp.weixin.qq.com/s/HbzLEt6NOP9Is9F3GOnbUQ](https://mp.weixin.qq.com/s/HbzLEt6NOP9Is9F3GOnbUQ)
+详情请参考mydjin原创的前端学习路线：[https://mp.weixin.qq.com/s/HbzLEt6NOP9Is9F3GOnbUQ](https://mp.weixin.qq.com/s/HbzLEt6NOP9Is9F3GOnbUQ)
 
 虽然 Java 程序员面试时基本不会出现前端相关问题，但是在企业中，往往需要前后端程序员配合完成工作。会一些前端，不仅可以提高你们的协作效率，还能提高自己对整个项目的了解和掌控力，甚至能独立开发出一个完整项目！这点也是能给面试加分的。
 
@@ -636,7 +636,7 @@ Git 和它可不一样，是一个版本控制工具，可以更好地管理和�
 
 
 ### 练手项目
-推荐跟着鱼皮的原创项目教程系列边学边做项目，每个项目都是前端 + 后端的全栈项目。用项目驱动学习，更快掌握前端基础和后端必学技术，并直接写在简历上：[项目实战 - 鱼皮原创项目教程系列](https://yuyuanweb.feishu.cn/wiki/SePYwTc9tipQiCktw7Uc7kujnCd) 。
+推荐跟着mydjin的原创项目教程系列边学边做项目，每个项目都是前端 + 后端的全栈项目。用项目驱动学习，更快掌握前端基础和后端必学技术，并直接写在简历上：[项目实战 - mydjin原创项目教程系列](https://yuyuanweb.feishu.cn/wiki/SePYwTc9tipQiCktw7Uc7kujnCd) 。
 
 - HotelSystem：[https://github.com/misterchaos/HotelSystem](https://github.com/misterchaos/HotelSystem) （酒店管理系统 Java,tomcat,mysql,servlet,jsp实现，没有使用任何框架）
 - 超市管理系统：[https://github.com/zhanglei-workspace/shopping-management-system](https://github.com/zhanglei-workspace/shopping-management-system)
@@ -728,7 +728,7 @@ Git 和它可不一样，是一个版本控制工具，可以更好地管理和�
 
 使用设计模式能让你写出更优雅、可维护的代码，也正因如此，很多框架源码都用到了设计模式，你不学很难看懂。
 
-此外，鱼皮改了几百份简历，基本上没有同学把设计模式写在项目经历中。因此学好设计模式并写在简历上是很加分的！
+此外，mydjin改了几百份简历，基本上没有同学把设计模式写在项目经历中。因此学好设计模式并写在简历上是很加分的！
 
 #### 知识
 
@@ -771,7 +771,7 @@ Git 和它可不一样，是一个版本控制工具，可以更好地管理和�
 #### 资源
 
 - 项目
-   - [项目实战 - 鱼皮原创项目教程系列](https://yuyuanweb.feishu.cn/wiki/SePYwTc9tipQiCktw7Uc7kujnCd) 中的聚合搜索项目、OJ 项目都运用了大量的设计模式，推荐学习
+   - [项目实战 - mydjin原创项目教程系列](https://yuyuanweb.feishu.cn/wiki/SePYwTc9tipQiCktw7Uc7kujnCd) 中的聚合搜索项目、OJ 项目都运用了大量的设计模式，推荐学习
 -  书籍 
    - ⭐《图解设计模式》（强烈推荐这本书，正是用 Java 语言实现，图多、有示例代码、有习题和答案，很不错）
    - 《Head First 设计模式》
@@ -838,7 +838,7 @@ Git 和它可不一样，是一个版本控制工具，可以更好地管理和�
 #### 资源
 
 - 项目
-   - [项目实战 - 鱼皮原创项目教程系列](https://yuyuanweb.feishu.cn/wiki/SePYwTc9tipQiCktw7Uc7kujnCd) 中的伙伴匹配系统、智能 BI 项目都运用了 Redis 解决实际问题，推荐学习
+   - [项目实战 - mydjin原创项目教程系列](https://yuyuanweb.feishu.cn/wiki/SePYwTc9tipQiCktw7Uc7kujnCd) 中的伙伴匹配系统、智能 BI 项目都运用了 Redis 解决实际问题，推荐学习
 - 视频 
    - ⭐ 2022 黑马 Redis 从基础到原理：[https://www.bilibili.com/video/BV1cr4y1671t](https://www.bilibili.com/video/BV1cr4y1671t)（结合项目去讲，强烈推荐）
    - 尚硅谷 - 2021 最新 Redis 6 入门到精通教程：[https://www.bilibili.com/video/BV1Rv41177Af](https://www.bilibili.com/video/BV1Rv41177Af) （基于 Redis 6 的，推荐）
@@ -884,7 +884,7 @@ Git 和它可不一样，是一个版本控制工具，可以更好地管理和�
 #### 资源
 
 - 项目
-   - [项目实战 - 鱼皮原创项目教程系列](https://yuyuanweb.feishu.cn/wiki/SePYwTc9tipQiCktw7Uc7kujnCd) 中的智能 BI 项目、在线判题系统都运用了消息队列解决实际问题，推荐学习
+   - [项目实战 - mydjin原创项目教程系列](https://yuyuanweb.feishu.cn/wiki/SePYwTc9tipQiCktw7Uc7kujnCd) 中的智能 BI 项目、在线判题系统都运用了消息队列解决实际问题，推荐学习
 - 视频 
    - ⭐️ 2023 黑马 RabbitMQ 消息队列教程：[https://www.bilibili.com/video/BV1Xm4y1i7HP](https://www.bilibili.com/video/BV1Xm4y1i7HP)（适合快速入门）
    - ⭐ 尚硅谷 - 2021 最新 RabbitMQ 教程：[https://www.bilibili.com/video/BV1cb4y1o7zz](https://www.bilibili.com/video/BV1cb4y1o7zz) （更加全面）
@@ -928,7 +928,7 @@ Nginx 的基本使用非常简单，甚至不需要看任何的视频，跟着�
 
 - 视频 
    - ⭐ 尚硅谷 - Nginx 教程由浅入深：[https://www.bilibili.com/video/BV1zJ411w7SV](https://www.bilibili.com/video/BV1zJ411w7SV) （讲的比较全面）
-   - ⭐ Nginx 鱼皮 - 手把手带你从0搭建个人网站：[https://www.bilibili.com/video/BV1rU4y1J785/](https://www.bilibili.com/video/BV1rU4y1J785/) （简单演示 Nginx 部署网站）
+   - ⭐ Nginx mydjin - 手把手带你从0搭建个人网站：[https://www.bilibili.com/video/BV1rU4y1J785/](https://www.bilibili.com/video/BV1rU4y1J785/) （简单演示 Nginx 部署网站）
 - 文档 
    - Nginx 中文文档：[https://www.nginx.cn/doc/index.html](https://www.nginx.cn/doc/index.html)
 - 工具 
@@ -1037,7 +1037,7 @@ Nginx 的基本使用非常简单，甚至不需要看任何的视频，跟着�
 #### 资源
 
 - 项目实战
-   - [项目实战 - 鱼皮原创项目教程系列](https://yuyuanweb.feishu.cn/wiki/SePYwTc9tipQiCktw7Uc7kujnCd) 中的 API 开放平台、在线判题系统都运用了微服务，推荐学习 
+   - [项目实战 - mydjin原创项目教程系列](https://yuyuanweb.feishu.cn/wiki/SePYwTc9tipQiCktw7Uc7kujnCd) 中的 API 开放平台、在线判题系统都运用了微服务，推荐学习 
 - 视频 
    - ⭐️ 黑马 Spring Cloud 视频教程：[https://www.bilibili.com/video/BV1kH4y1S7wz](https://www.bilibili.com/video/BV1kH4y1S7wz)（11 小时，非常凝练，适合快速入门）
    - ⭐️ 尚硅谷 Dubbo 教程：[https://www.bilibili.com/video/BV1ns411c7jV](https://www.bilibili.com/video/BV1ns411c7jV) 
@@ -1093,7 +1093,7 @@ Nginx 的基本使用非常简单，甚至不需要看任何的视频，跟着�
 #### 资源
 
 - 项目实战
-   - [项目实战 - 鱼皮原创项目教程系列](https://yuyuanweb.feishu.cn/wiki/SePYwTc9tipQiCktw7Uc7kujnCd) 中的在线判题项目运用了 Docker 解决实际问题，推荐学习 
+   - [项目实战 - mydjin原创项目教程系列](https://yuyuanweb.feishu.cn/wiki/SePYwTc9tipQiCktw7Uc7kujnCd) 中的在线判题项目运用了 Docker 解决实际问题，推荐学习 
 - 视频 
    - ⭐【狂神说】Docker 最新超详细版教程通俗易懂：[https://www.bilibili.com/video/BV1og4y1q7M4](https://www.bilibili.com/video/BV1og4y1q7M4)
    - K8S 视频教程：[https://www.bilibili.com/video/BV1K5411N7j8](https://www.bilibili.com/video/BV1K5411N7j8)
@@ -1138,11 +1138,11 @@ Nginx 的基本使用非常简单，甚至不需要看任何的视频，跟着�
 -  文档 
    - Jenkins 官方文档：[https://www.jenkins.io/zh/](https://www.jenkins.io/zh/) （有很多案例，要用的时候查一下就行了）
 -  实战平台 
-   - ⭐ 微信云托管：[https://cloud.weixin.qq.com/cloudrun](https://cloud.weixin.qq.com/cloudrun) （直播演示过，鱼皮后面会给大家出视频教程）
-   - 前端托管 Webify：[https://cloud.tencent.com/product/webify](https://cloud.tencent.com/product/webify) （鱼皮给大家出过视频教程的 https://www.bilibili.com/video/BV11V411p7vf/）
+   - ⭐ 微信云托管：[https://cloud.weixin.qq.com/cloudrun](https://cloud.weixin.qq.com/cloudrun) （直播演示过，mydjin后面会给大家出视频教程）
+   - 前端托管 Webify：[https://cloud.tencent.com/product/webify](https://cloud.tencent.com/product/webify) （mydjin给大家出过视频教程的 https://www.bilibili.com/video/BV11V411p7vf/）
 
 ### 练手项目
-学习完框架后，即可跟着鱼皮的原创项目教程系列边学边做项目。用项目驱动学习，更快地掌握后端必学技术，并直接写在简历上：[项目实战 - 鱼皮原创项目教程系列](https://yuyuanweb.feishu.cn/wiki/SePYwTc9tipQiCktw7Uc7kujnCd) 。
+学习完框架后，即可跟着mydjin的原创项目教程系列边学边做项目。用项目驱动学习，更快地掌握后端必学技术，并直接写在简历上：[项目实战 - mydjin原创项目教程系列](https://yuyuanweb.feishu.cn/wiki/SePYwTc9tipQiCktw7Uc7kujnCd) 。
 
 -  mall-learning：[https://github.com/macrozheng/mall-learningmall](https://github.com/macrozheng/mall-learningmall) （学习教程，架构、业务、技术要点全方位解析） 
 -  miaosha：[https://github.com/qiurunze123/miaosha](https://github.com/qiurunze123/miaosha) （秒杀系统设计与实现） 
@@ -1187,7 +1187,7 @@ Nginx 的基本使用非常简单，甚至不需要看任何的视频，跟着�
 ### 视频教程
 [编程导航知识星球](https://yuyuanweb.feishu.cn/wiki/VC1qwmX9diCBK3kidyec74vFnde) 内部分享：
 
-1. ⭐️ 鱼皮全程直播带做的保姆级全栈项目，带现成的简历写法和面试题：[项目实战 - 鱼皮原创项目教程系列](https://yuyuanweb.feishu.cn/wiki/SePYwTc9tipQiCktw7Uc7kujnCd)。
+1. ⭐️ mydjin全程直播带做的保姆级全栈项目，带现成的简历写法和面试题：[项目实战 - mydjin原创项目教程系列](https://yuyuanweb.feishu.cn/wiki/SePYwTc9tipQiCktw7Uc7kujnCd)。
 2. [项目训练营（寻爱网项目）](https://t.zsxq.com/06EIMNr3R)：学习从立项到上线的完整做项目流程 + 优化思路
 3. [从 0 到 1 开发用户中心](https://t.zsxq.com/03RjeeYZJ)：保姆级前后端完整项目教程，适合刚学完框架的新手
 4. [伙伴匹配系统](https://t.zsxq.com/03jmU7eAa)：移动端网站，设计分布式和并发编程知识，适合已经做过一个小项目的同学练习
@@ -1624,9 +1624,9 @@ Nginx 的基本使用非常简单，甚至不需要看任何的视频，跟着�
 - Qdir：Windows 多窗口管理器（https://q-dir.en.softonic.com/）
 
 ### 项目源码（50 套）
-#### 鱼皮原创项目
+#### mydjin原创项目
 
-- [项目实战 - 鱼皮原创项目教程系列](https://yuyuanweb.feishu.cn/wiki/SePYwTc9tipQiCktw7Uc7kujnCd)
+- [项目实战 - mydjin原创项目教程系列](https://yuyuanweb.feishu.cn/wiki/SePYwTc9tipQiCktw7Uc7kujnCd)
 - SQL 数据生成器（React + Java）：[https://github.com/liyupi/sql-father-frontend-public](https://github.com/liyupi/sql-father-frontend-public)
 - 结构化 SQL 语句生成器：[https://github.com/liyupi/sql-generator](https://github.com/liyupi/sql-generator)
 - AI 自动回复工具（Java 项目）：[https://github.com/liyupi/yu-auto-reply](https://github.com/liyupi/yu-auto-reply)
@@ -1743,7 +1743,7 @@ Nginx 的基本使用非常简单，甚至不需要看任何的视频，跟着�
 #### 资源
 
 - 项目实战
-   - [项目实战 - 鱼皮原创项目教程系列](https://yuyuanweb.feishu.cn/wiki/SePYwTc9tipQiCktw7Uc7kujnCd) 中的伙伴匹配系统、智能 BI 项目、OJ 判题系统都运用了并发编程解决实际问题，推荐学习 
+   - [项目实战 - mydjin原创项目教程系列](https://yuyuanweb.feishu.cn/wiki/SePYwTc9tipQiCktw7Uc7kujnCd) 中的伙伴匹配系统、智能 BI 项目、OJ 判题系统都运用了并发编程解决实际问题，推荐学习 
 - 视频 
    - ⭐【尚硅谷】大厂必备技术之JUC并发编程2021最新版：[https://www.bilibili.com/video/BV1Kw411Z7dF](https://www.bilibili.com/video/BV1Kw411Z7dF) （特点是短、精、新）
    - 黑马程序员全面深入学习Java并发编程：[https://www.bilibili.com/video/BV16J411h7Rd](https://www.bilibili.com/video/BV16J411h7Rd) （讲的很细、全面深入）
@@ -2007,10 +2007,8 @@ JVM 的知识略显枯燥，建议先看视频，有实操的地方一定要实�
 
 - 实习僧：[https://www.shixiseng.com/](https://www.shixiseng.com/)
 
-#### 鱼皮经历
+#### mydjin经历
 
-- 从 0 开始的编程学习进大厂经历 
-   - ⭐ 我学计算机的四年，共勉：[https://mp.weixin.qq.com/s/Nc7Ee2UyrPg6hGseQUCzeg](https://mp.weixin.qq.com/s/Nc7Ee2UyrPg6hGseQUCzeg)
 - 实习经历 
    -  ⭐ 我的第一份实习：[https://mp.weixin.qq.com/s/SwGiRzyTkCOOCUXfXPR1Pw](https://mp.weixin.qq.com/s/SwGiRzyTkCOOCUXfXPR1Pw) 
    -  ⭐ 我的第二份实习，字节跳动：[https://mp.weixin.qq.com/s/3q-YIfuZBjPjSnamNwOraw](https://mp.weixin.qq.com/s/3q-YIfuZBjPjSnamNwOraw) 

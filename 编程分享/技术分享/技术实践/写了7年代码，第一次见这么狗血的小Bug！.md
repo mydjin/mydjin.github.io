@@ -1,6 +1,6 @@
 # 写了7年代码，第一次见这么狗血的小Bug！
 
-> 本文作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
+> 本文作者：[程序员mydjin](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
 >
 > 本站地址：[https://codefather.cn](https://codefather.cn)
 
@@ -20,7 +20,7 @@
 
 ![](https://pic.yupi.icu/5563/202311071935738.png)
 
-然后鱼皮顺着网线爬到后端，先要确认一下从数据库中有没有查出最原始的数据，再考虑是不是被业务代码过滤掉了。
+然后mydjin顺着网线爬到后端，先要确认一下从数据库中有没有查出最原始的数据，再考虑是不是被业务代码过滤掉了。
 
 在本地开启数据库的查询日志，用的是 MyBatis Plus 框架，开启日志的代码如下：
 

@@ -1,10 +1,10 @@
 # 学网站开发还是打 ACM？
 
-> 本文作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
+> 本文作者：[程序员mydjin](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
 >
 > 本站地址：[https://codefather.cn](https://codefather.cn)
 
-大家好，我是鱼皮，前几天在知乎上看到一位大一计科学弟的问题：我想学做 Web 项目，又想学算法搞 ACM，如何取舍呢 ?
+大家好，我是mydjin，前几天在知乎上看到一位大一计科学弟的问题：我想学做 Web 项目，又想学算法搞 ACM，如何取舍呢 ?
 
 > ACM 是国际大学生程序设计竞赛，旨在展示大学生创新能力、团队精神、编写程序、分析和解决问题的能力，认可度极高。
 

@@ -1,12 +1,12 @@
 # VS Code 远程开发实战
 
-> 本文作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
+> 本文作者：[程序员mydjin](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
 >
 > 本站地址：[https://codefather.cn](https://codefather.cn)
 
 > 从 0 开始体验一波远程开发
 
-大家好，我是鱼皮。
+大家好，我是mydjin。
 
 记得刚开始学编程的时候，我理所应当地以为只能编辑自己电脑上的代码文件。如果想要修改服务器上的代码，只能先把代码从服务器上拷贝下来，然后在本地修改好再上传到服务器上。
 
@@ -26,7 +26,7 @@
 
 ![](https://pic.yupi.icu/5563/202311081005210.png)
 
-> 鱼皮远程开发实战导图
+> mydjin远程开发实战导图
 
 ### 何为远程开发？
 
@@ -172,6 +172,6 @@ VS Code 提供了端口转发功能，可以配置远程服务器和本地端口
 
 ⬇️ 点击下方阅读原文一键跳转到视频
 
-我是鱼皮，**点赞 + 在看** 还是要求一下的，祝大家都能心想事成、发大财、行大运。
+我是mydjin，**点赞 + 在看** 还是要求一下的，祝大家都能心想事成、发大财、行大运。
 
 ![](https://pic.yupi.icu/5563/202311081005960.png)

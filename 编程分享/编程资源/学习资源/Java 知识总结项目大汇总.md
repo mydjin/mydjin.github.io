@@ -1,10 +1,10 @@
 > 免费编程资源大全项目：https://github.com/liyupi/free-programming-resources
 
-> 本文作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
+> 本文作者：[程序员mydjin](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
 >
 > 本站地址：[https://codefather.cn](https://codefather.cn)
 
-大家好，我是鱼皮，今天分享 **十几个** 让人直呼 “哇塞” 的 Java 知识总结项目！
+大家好，我是mydjin，今天分享 **十几个** 让人直呼 “哇塞” 的 Java 知识总结项目！
 
 这些项目能够帮助你 **系统化地** 学习或复习 Java 及后端知识点，带你快速了解技术全貌、查漏补缺，**尤其适合准备面试时阅读**。
 

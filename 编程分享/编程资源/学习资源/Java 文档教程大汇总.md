@@ -1,12 +1,12 @@
 # Java 文档教程大汇总
 
-> 本文作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
+> 本文作者：[程序员mydjin](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
 >
 > 本站地址：[https://codefather.cn](https://codefather.cn)
 
 > 已收录至免费编程资源大全：https://github.com/liyupi/free-programming-resources
 
-大家好，我是鱼皮，今天分享几个 GitHub 上非常实用的 Java 文档教程项目，包括 Java 基础知识、类库框架、系统设计、源码分析等。
+大家好，我是mydjin，今天分享几个 GitHub 上非常实用的 Java 文档教程项目，包括 Java 基础知识、类库框架、系统设计、源码分析等。
 
 用文档学习的好处是可以把控自己的学习节奏，并且更方便地记录笔记。习惯通过阅读文档来学习的朋友一定不要错过下面这些项目。
 

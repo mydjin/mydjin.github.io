@@ -1,10 +1,10 @@
 # Gitee 很无奈！
 
-> 本文作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
+> 本文作者：[程序员mydjin](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
 >
 > 本站地址：[https://codefather.cn](https://codefather.cn)
 
-大家好，我是鱼皮，昨天在知乎上看到一个关注度很高的问题，如图：
+大家好，我是mydjin，昨天在知乎上看到一个关注度很高的问题，如图：
 
 ![](https://pic.yupi.icu/5563/202311091234290.png)
 

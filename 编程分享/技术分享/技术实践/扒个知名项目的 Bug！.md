@@ -1,12 +1,12 @@
 # 扒个知名项目的 Bug！
 
-> 本文作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
+> 本文作者：[程序员mydjin](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
 >
 > 本站地址：[https://codefather.cn](https://codefather.cn)
 
 > 分享一个不错的 Bug 排查思路 ~
 
-大家好，我是鱼皮。我们在学编程时难免会遇到各种各样的 Bug，这种时候你一般会怎么处理呢？
+大家好，我是mydjin。我们在学编程时难免会遇到各种各样的 Bug，这种时候你一般会怎么处理呢？
 
 我估计大多数同学会在第一时间选择百度谷歌，也有同学会选择直接求助他人，仅有极少数同学会通过查文档、看源码等方式硬核解决。
 

@@ -1,10 +1,10 @@
 # 看完这个，我直接把 SQL 刷通了！
 
-> 本文作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
+> 本文作者：[程序员mydjin](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
 >
 > 本站地址：[https://codefather.cn](https://codefather.cn)
 
-大家好，我是鱼皮。
+大家好，我是mydjin。
 
 相信很多学编程的同学都学习过 SQL 吧？SQL 作为数据库查询语言，实在是太重要了，可以说是程序员、产品经理、数据分析同学的必备技能。
 
@@ -72,7 +72,7 @@
 
 有同学要问了：为什么不用后端呢？
 
-鱼皮：当然是为了减少被攻击的风险啊！！！
+mydjin：当然是为了减少被攻击的风险啊！！！
 
 ![](https://pic.yupi.icu/5563/202311090806730.png)
 

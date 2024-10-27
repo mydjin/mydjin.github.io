@@ -1,6 +1,6 @@
 # 我用了 6 年，告诉你怎么学好 Java
 
-> 本文作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
+> 本文作者：[程序员mydjin](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
 >
 > 本站地址：[https://codefather.cn](https://codefather.cn)
 
@@ -165,7 +165,7 @@ Java 是我用的最多的编程语言，之前也给大家分享过 [Java 学�
 
 **星球目前已经超过 1 万人了，会在 8 月 21 日晚上涨价 20，并且不再发放 60 元优惠券（之后还想优惠加入的朋友等后续通知）。**
 
-> 星球目前有 2000 多个鱼皮的回答，400 + 精华帖，几十 T 学习资料，30 余场直播分享等
+> 星球目前有 2000 多个mydjin的回答，400 + 精华帖，几十 T 学习资料，30 余场直播分享等
 
 扫下方二维码即可领券加入（3 天内不满意可全额退款）：
 

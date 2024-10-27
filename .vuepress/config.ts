@@ -9,7 +9,7 @@ const domain = "https://mydjin.github.io";
 const tags = ["程序员", "编程", "计算机"];
 
 export default defineConfig({
-  title: "鱼皮的编程宝典",
+  title: "mydjin的编程宝典",
   description: "贴心的编程学习路线，全面的编程知识百科",
   head: [
     // 站点图标

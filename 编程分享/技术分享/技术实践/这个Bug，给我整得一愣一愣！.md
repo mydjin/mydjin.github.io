@@ -1,12 +1,12 @@
 # 这个 Bug，给我整得一愣一愣！
 
-> 本文作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
+> 本文作者：[程序员mydjin](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
 >
 > 本站地址：[https://codefather.cn](https://codefather.cn)
 
 > Bug 年年有，今年特别多
 
-大家好，我是鱼皮。
+大家好，我是mydjin。
 
 今年真不错，红红火火，一写代码就一片红，Bug 特别多！
 

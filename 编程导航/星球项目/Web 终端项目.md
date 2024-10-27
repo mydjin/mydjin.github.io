@@ -1,6 +1,6 @@
 # Web 终端项目
 
-> by 程序员鱼皮 [知识星球](https://yupi.icu)
+> by 程序员mydjin [知识星球](https://yupi.icu)
 
 ## 项目介绍
 
@@ -36,7 +36,7 @@
 
 ## 加入星球
 
-鱼皮在星球中持续带领大家直播做新项目、分享项目开发经验和源码，欢迎加入。
+mydjin在星球中持续带领大家直播做新项目、分享项目开发经验和源码，欢迎加入。
 
 [👉🏻 点此加入星球](https://yuyuanweb.feishu.cn/wiki/SDtMwjR1DituVpkz5MLc3fZLnzb)
 

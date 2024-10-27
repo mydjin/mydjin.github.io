@@ -1,10 +1,10 @@
 # 分享一套保姆级 Java 教程
 
-> 本文作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
+> 本文作者：[程序员mydjin](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
 >
 > 本站地址：[https://codefather.cn](https://codefather.cn)
 
-之前给大家零零散散分享过很多 Java 和后端的学习资源，但很多同学表示看的不过瘾，大呼鱼皮不讲码德！
+之前给大家零零散散分享过很多 Java 和后端的学习资源，但很多同学表示看的不过瘾，大呼mydjin不讲码德！
 
 因此还是给大家分享一套 **最完整的 Java & 后端学习教程** 吧！别人家有的，我们也要有！
 
@@ -56,7 +56,7 @@
 
 #### 领取方式
 
-长按下方二维码关注鱼皮的公众号，后台回复『 999 』领取哦~
+长按下方二维码关注mydjin的公众号，后台回复『 999 』领取哦~
 
 ![](https://pic.yupi.icu/5563/202311091034027.jpeg)
 

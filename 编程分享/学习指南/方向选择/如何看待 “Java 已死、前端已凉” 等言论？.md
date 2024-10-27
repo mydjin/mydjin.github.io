@@ -1,10 +1,10 @@
 # 如何看待 “Java 已死、前端已凉” 等言论？
 
-> 本文作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
+> 本文作者：[程序员mydjin](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
 >
 > 本站地址：[https://codefather.cn](https://codefather.cn)
 
-大家好，我是鱼皮，上次直播的时候有同学问我：怎么看待 “Java 已死、前端已凉” 的言论？
+大家好，我是mydjin，上次直播的时候有同学问我：怎么看待 “Java 已死、前端已凉” 的言论？
 
 我其实一直不太想回答这种问题，因为一个人一个看法，争议会比较大，但是最近看到身边有一些同学 “无脑转行” 的情况，还是决定来客观分析下这个问题。
 

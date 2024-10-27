@@ -1,6 +1,6 @@
 # Java 后端万用项目模板
 
-> 作者：[程序员鱼皮](https://github.com/liyupi)
+> 作者：[程序员mydjin](https://github.com/liyupi)
 > 仅分享于 [编程导航知识星球](https://yupi.icu)
 
 基于 Java SpringBoot 的项目初始模板，整合了常用框架和主流业务的示例代码。
@@ -79,7 +79,7 @@
 
 ## 加入星球
 
-鱼皮在星球中持续带领大家直播做新项目、分享项目开发经验和源码，欢迎加入。
+mydjin在星球中持续带领大家直播做新项目、分享项目开发经验和源码，欢迎加入。
 
 [👉🏻 点此加入星球](https://yuyuanweb.feishu.cn/wiki/SDtMwjR1DituVpkz5MLc3fZLnzb)
 

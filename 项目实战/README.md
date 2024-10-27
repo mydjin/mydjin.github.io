@@ -1,12 +1,12 @@
-# 项目实战 - 鱼皮原创项目教程系列
+# 项目实战 - mydjin原创项目教程系列
 
-> 本文作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
+> 本文作者：[程序员mydjin](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
 >
 > 本站地址：[https://codefather.cn](https://codefather.cn)
 >
 > ⭐️ 加入项目系列学习：[加入编程导航](https://yuyuanweb.feishu.cn/wiki/SDtMwjR1DituVpkz5MLc3fZLnzb)
 
-鱼皮原创项目系列以 **实战** 为主，用全程直播的方式，从 0 到 1 带大家学习技术知识，并立即实践运用到项目中，做到学以致用。
+mydjin原创项目系列以 **实战** 为主，用全程直播的方式，从 0 到 1 带大家学习技术知识，并立即实践运用到项目中，做到学以致用。
 
 此外，还提供如下服务：
 
@@ -19,11 +19,11 @@
 - ⭐️ 项目相关面试题、题解和真实面经（提前准备，面试不懵逼）
 - ⭐️ Java 后端万用项目模板（快速创建项目）
 
-比起看网上的教程学习，鱼皮项目系列的优势：
+比起看网上的教程学习，mydjin项目系列的优势：
 
 > 从学知识 => 实践项目 => 复习笔记 => 项目答疑 => 简历写法 => 面试题解的一条龙服务
 
-| 对比维度 | 跟学鱼皮项目                                                 | 自学网上免费项目                                             | ⭐️ 鱼皮项目优势               |
+| 对比维度 | 跟学mydjin项目                                                 | 自学网上免费项目                                             | ⭐️ mydjin项目优势               |
 | -------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------------------- |
 | 项目选题 | ✅ 选题新颖，刻意避开网上热门项目                             | 传统项目场景（博客、商城、管理系统）                         | 增加区分度，提高简历通过率   |
 | 学习人数 | ✅ 少，不容易撞车                                             | 百万以上，烂大街                                             | 增加区分度，提高简历通过率   |
@@ -38,7 +38,7 @@
 
 每个项目的侧重点不同，全都是前端 + 后端的 **全栈****项目** 。
 
-> 所有 [加入编程导航](https://yuyuanweb.feishu.cn/wiki/SDtMwjR1DituVpkz5MLc3fZLnzb) 的同学可获鱼皮授权将项目作为毕业设计，并获取毕设建议~
+> 所有 [加入编程导航](https://yuyuanweb.feishu.cn/wiki/SDtMwjR1DituVpkz5MLc3fZLnzb) 的同学可获mydjin授权将项目作为毕业设计，并获取毕设建议~
 
 
 
@@ -171,7 +171,7 @@
 
 ## 开源项目
 
-鱼皮 GitHub：[https://github.com/liyupi](https://github.com/liyupi) （国内：[https://gitee.com/liyupi](https://gitee.com/liyupi)）
+mydjin GitHub：[https://github.com/liyupi](https://github.com/liyupi) （国内：[https://gitee.com/liyupi](https://gitee.com/liyupi)）
 
 SQL 闯关式自学网（纯前端项目）：[https://github.com/liyupi/sql-mother](https://github.com/liyupi/sql-mother)
 

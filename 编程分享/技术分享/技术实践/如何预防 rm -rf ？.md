@@ -1,12 +1,12 @@
 # 如何预防 rm -rf ？
 
-> 本文作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
+> 本文作者：[程序员mydjin](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
 >
 > 本站地址：[https://codefather.cn](https://codefather.cn)
 
 > 一个 “实用” 的好命令，我不得试试？
 
-大家好，我是鱼皮。
+大家好，我是mydjin。
 
 在编程届，有一个家喻户晓的实用 Linux 命令：`rm -rf /` 。
 
@@ -231,6 +231,6 @@ dog localhost=/bin/rm /file/*
 
 但最后，还是要提醒大家，不要轻易尝试这个命令哈哈。一时好奇一时爽，明天要睡垃圾场！
 
-我是鱼皮，**点赞 + 在看** 还是要求一下的，祝大家都能心想事成、发大财、行大运。
+我是mydjin，**点赞 + 在看** 还是要求一下的，祝大家都能心想事成、发大财、行大运。
 
 ![](https://pic.yupi.icu/5563/202311071934542.png)

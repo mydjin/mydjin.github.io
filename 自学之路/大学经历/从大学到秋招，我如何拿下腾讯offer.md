@@ -1,6 +1,6 @@
 # 从大学到秋招，我如何拿下腾讯offer
 
-> 本文作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
+> 本文作者：[程序员mydjin](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
 >
 > 本站地址：[https://codefather.cn](https://codefather.cn)
 
@@ -8,7 +8,7 @@
 
 **自我介绍**
 
-鱼皮是上海某211学校本科生，网络工程专业，秋招因为有腾讯的实习转正，所以只面了大厂，也拿了几个大厂的offer。
+mydjin是上海某211学校本科生，网络工程专业，秋招因为有腾讯的实习转正，所以只面了大厂，也拿了几个大厂的offer。
 
 ![](https://pic.yupi.icu/5563/202311021509596.jpeg)
 

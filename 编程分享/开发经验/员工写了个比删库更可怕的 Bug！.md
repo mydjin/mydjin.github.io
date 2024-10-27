@@ -1,10 +1,10 @@
 # 员工写了个比删库更可怕的 Bug！
 
-> 本文作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
+> 本文作者：[程序员mydjin](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
 >
 > 本站地址：[https://codefather.cn](https://codefather.cn)
 
-大家好，我是鱼皮，今天是公司没破产的第 102 天。
+大家好，我是mydjin，今天是公司没破产的第 102 天。
 
 想必大家都听说过删库跑路吧，我之前一直把它当一个段子来看。
 

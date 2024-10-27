@@ -1,12 +1,12 @@
 # 万万没想到，这都能发现 Bug？！
 
-> 本文作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
+> 本文作者：[程序员mydjin](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
 >
 > 本站地址：[https://codefather.cn](https://codefather.cn)
 
 > Bug 总会不约而至
 
-大家好，我是鱼皮，昨天工作中遇到一个挺好玩儿的小 Bug，和大家分享下，小白可懂～
+大家好，我是mydjin，昨天工作中遇到一个挺好玩儿的小 Bug，和大家分享下，小白可懂～
 
 事情是这样的，为了保证发到线上的项目代码能正常运行，每次构建发布前，我们都会执行一遍单元测试，对业务流程、一些增删改查之类的代码片段进行验证。
 
@@ -90,6 +90,6 @@ List<Asset> CompletableFuture
 ------
 
 
-以上就是本期分享，有帮助的话还请给鱼皮一个 **点赞 + 在看** ，谢谢大家！
+以上就是本期分享，有帮助的话还请给mydjin一个 **点赞 + 在看** ，谢谢大家！
 
 ![](https://pic.yupi.icu/5563/202311072018445.png)

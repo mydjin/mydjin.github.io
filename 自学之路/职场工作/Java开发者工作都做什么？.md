@@ -1,6 +1,6 @@
 # Java 开发者工作都做什么？
 
-> 本文作者：[程序员鱼皮](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
+> 本文作者：[程序员mydjin](https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah)
 >
 > 本站地址：[https://codefather.cn](https://codefather.cn)
 
@@ -113,6 +113,6 @@ Java 的单元测试类库一般用 `JUnit` 就行了，本地自己测试请求
 
 ------
 
-以上就是我的 Java 开发日常，你可能会好奇，鱼皮在哪家小微公司待过呢？这是个秘密！
+以上就是我的 Java 开发日常，你可能会好奇，mydjin在哪家小微公司待过呢？这是个秘密！
 
 Java 开发者的工作看似平淡，但只要你爱好编程，爱好这个行业，每一天都能过的充实而有意义！
