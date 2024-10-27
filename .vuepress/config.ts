@@ -118,6 +118,16 @@ export default defineConfig({
       shape: 'star', // ['star' | 'circle'], // shape of the particle, default: 'star'
       zIndex: 999999999, // z-index property of the canvas, default: 999999999
       }],
+    ['@vssue/vuepress-plugin-vssue', {
+    // 设置 `platform` 而不是 `api`
+    platform: 'github',
+
+    // 其他的 Vssue 配置
+    owner: 'mydjin',
+    repo: 'mydjin.github.io',
+    clientId: 'Ov23liwcaeG8ZLMOLThH',
+    clientSecret: '81829b2b2315cfc7981b21d0e09c72ed42a3159c',
+  },]
   ],
   // 主题配置
   themeConfig: {
