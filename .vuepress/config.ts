@@ -20,7 +20,7 @@ export default defineConfig({
       {
         name: "keywords",
         content:
-          "知识扫盲, 编程学习路线, 编程知识百科, Java, 编程导航, 前端, 开发, 编程分享, 项目, IT, 行业认知, 求职, 面经",
+          "知识扫盲, 编程学习, Java, 编程导航, 前端, 开发, 编程分享, 项目, IT, 行业认知, 求职, 面经",
       },
     ],
     // 百度统计
@@ -112,6 +112,12 @@ export default defineConfig({
     ],
     // https://github.com/tolking/vuepress-plugin-img-lazy
     ["img-lazy"],
+    // 光标效果
+    ['cursor-effects', {
+      size: 2, // size of the particle, default: 2
+      shape: 'star', // ['star' | 'circle'], // shape of the particle, default: 'star'
+      zIndex: 999999999, // z-index property of the canvas, default: 999999999
+      }],
   ],
   // 主题配置
   themeConfig: {
@@ -121,7 +127,7 @@ export default defineConfig({
     lastUpdated: "最近更新",
 
     // GitHub 仓库位置
-    repo: "liyupi/codefather",
+    repo: "mydjin/mydjin.github.io",
     docsBranch: "master",
 
     // 编辑链接
