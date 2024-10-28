@@ -92,6 +92,10 @@ export default [
         ]
     },
     {
+        text: "茶",
+        link: '/茶/',
+    },
+    {
         text: "国学",
         link: '/国学/',
         items: [
