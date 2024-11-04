@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "scripts": {
     "docs:dev": "vuepress dev .",
-    "docs:build": "vuepress build ."
+    "docs:build": "vuepress build .",
+    "decrypt": "encrypt decrypt --source-dir ./ --key-file keys.json --temp .temp-encrypt",
+    "encrypt": "encrypt encrypt --source-dir ./ --key-file keys.json --temp .temp-encrypt"
   },
   "license": "MIT",
   "devDependencies": {
+    "@oak-tree-house/vuepress-plugin-encrypt": "^1.0.1",
     "@vuepress/plugin-back-to-top": "^1.9.10",
     "@vuepress/plugin-google-analytics": "^1.9.10",
     "@vuepress/plugin-medium-zoom": "^1.9.10",
@@ -20,6 +23,7 @@
   "dependencies": {
     "@vssue/vuepress-plugin-vssue": "^1.4.8",
     "vuepress-plugin-code-copy": "^1.0.6",
-    "vuepress-plugin-img-lazy": "^1.0.4"
+    "vuepress-plugin-img-lazy": "^1.0.4",
+    "vuepress-plugin-rss": "^2.0.0"
   }
 }

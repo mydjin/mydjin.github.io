@@ -123,3 +123,7 @@ dist
 .pnp.*
 
 /.vuepress/dist/
+
+# encrypted files
+/keys.json
+/.temp-encrypt

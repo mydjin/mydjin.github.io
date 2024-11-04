@@ -119,15 +119,45 @@ export default defineConfig({
       zIndex: 999999999, // z-index property of the canvas, default: 999999999
       }],
     ['@vssue/vuepress-plugin-vssue', {
-    // 设置 `platform` 而不是 `api`
-    platform: 'github',
+      // 设置 `platform` 而不是 `api`
+      platform: 'github',
 
-    // 其他的 Vssue 配置
-    owner: 'mydjin',
-    repo: 'mydjin.github.io',
-    clientId: 'Ov23liwcaeG8ZLMOLThH',
-    clientSecret: '81829b2b2315cfc7981b21d0e09c72ed42a3159c',
-  },]
+      // 其他的 Vssue 配置
+      owner: 'mydjin',
+      repo: 'mydjin.github.io',
+      clientId: 'Ov23liwcaeG8ZLMOLThH',
+      clientSecret: '81829b2b2315cfc7981b21d0e09c72ed42a3159c',
+    },],
+    // 文章加密
+    ['@oak-tree-house/encrypt', {
+      contentTitle: 'Encrypted Content',
+      unencryptedText: 'The content is shown below. It should be encrypted when published.',
+      encryptedText: 'This part of content is encrypted. To view it, you need to enter the correct key in the input field below.',
+      decryptedText: 'The encrypted content is successfully decrypted and shown below.',
+      decryptButtonText: 'Decrypt',
+      decryptFailText: 'Failed to decrypt!',
+      unencryptedIcon: undefined,
+      encryptedIcon: undefined,
+      decryptedIcon: undefined
+    }],
+    ['@vuepress/plugin-rss', {
+      output: 'rss.xml',
+      title: 'mydjin',
+      description: '网站描述',
+      feedLinks: {
+        rss2: '/rss.xml',
+        atom: '/atom.xml',
+        json: '/json_feed.json'
+      },
+      categories: true,
+      categoryTitle: '分类标签',
+      order: 'asc',
+      limit: 10,
+      dateKey: 'date',
+      authorKey: 'author',
+      linkKey: 'link',
+      itemKeys: ['title', 'description', 'date']
+    }]
   ],
   // 主题配置
   themeConfig: {
@@ -149,5 +179,14 @@ export default defineConfig({
     footer,
     // 额外右侧边栏
     extraSideBar,
+
+    encrypt: {
+      config: {
+        // 这会加密整个 guide 目录，并且两个密码都是可用的
+        "/国学/儒学/": ["1234", "5678"],
+        // 这只会加密 config/page.html
+        "/config/page.html": "1234"
+      }
+    }
   },
 });
