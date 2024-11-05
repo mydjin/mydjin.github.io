@@ -1,5 +1,8 @@
 ---
 permalink: /
+feed:
+  enable: true
+description: feedId:76473931194706944+userId:63112175590810624
 ---
 
 # mydjin的编程宝典
