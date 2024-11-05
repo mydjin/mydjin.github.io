@@ -40,6 +40,8 @@
       </template>
       <template #bottom>
         <slot name="page-bottom" />
+        <!-- 使用 title -->
+        <Vssue :options="{ locale: 'zh' }" />
         <Footer />
       </template>
     </Page>

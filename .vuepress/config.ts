@@ -4,13 +4,13 @@ import sidebar from "./sidebar";
 import footer from "./footer";
 import extraSideBar from "./extraSideBar";
 
-const author = "docccs";
+const author = "mydjin";
 const domain = "https://mydjin.github.io";
 const tags = ["程序员", "编程", "计算机"];
 
 export default defineConfig({
   title: "mydjin的编程宝典",
-  description: "贴心的编程学习路线，全面的编程知识百科",
+  description: "贴心的编程学习路线，全面的知识百科",
   head: [
     // 站点图标
     ["link", { rel: "icon", href: "/favicon.ico" }],
@@ -120,15 +120,16 @@ export default defineConfig({
       }],
     ['@vssue/vuepress-plugin-vssue', {
       // 设置 `platform` 而不是 `api`
-      platform: 'github',
+      platform: 'github-v4',
 
       // 其他的 Vssue 配置
       owner: 'mydjin',
       repo: 'mydjin.github.io',
       clientId: 'Ov23liwcaeG8ZLMOLThH',
       clientSecret: '81829b2b2315cfc7981b21d0e09c72ed42a3159c',
+      autoCreateIssue: true,
     },],
-    // 文章加密
+    // 文章加密 
     ['@oak-tree-house/encrypt', {
       contentTitle: 'Encrypted Content',
       unencryptedText: 'The content is shown below. It should be encrypted when published.',
@@ -139,24 +140,6 @@ export default defineConfig({
       unencryptedIcon: undefined,
       encryptedIcon: undefined,
       decryptedIcon: undefined
-    }],
-    ['@vuepress/plugin-rss', {
-      output: 'rss.xml',
-      title: 'mydjin',
-      description: '网站描述',
-      feedLinks: {
-        rss2: '/rss.xml',
-        atom: '/atom.xml',
-        json: '/json_feed.json'
-      },
-      categories: true,
-      categoryTitle: '分类标签',
-      order: 'asc',
-      limit: 10,
-      dateKey: 'date',
-      authorKey: 'author',
-      linkKey: 'link',
-      itemKeys: ['title', 'description', 'date']
     }]
   ],
   // 主题配置
@@ -187,6 +170,10 @@ export default defineConfig({
         // 这只会加密 config/page.html
         "/config/page.html": "1234"
       }
-    }
+    },
+    feed:
+    {
+      enable: true,
+    }, // rss
   },
 });
