@@ -2,9 +2,8 @@
 permalink: /
 feed:
   enable: true
-description: feedId:76473931194706944+userId:63112175590810624
+description: 
 ---
-
 # mydjin的编程宝典
 
 > 贴心的编程学习路线，全面的行业知识百科

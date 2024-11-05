@@ -10,7 +10,8 @@ const tags = ["程序员", "编程", "计算机"];
 
 export default defineConfig({
   title: "mydjin的编程宝典",
-  description: "贴心的编程学习路线，全面的知识百科",
+  // description: "贴心的编程学习路线，全面的知识百科",
+  description: "feedId:76473931194706944+userId:63112175590810624",
   head: [
     // 站点图标
     ["link", { rel: "icon", href: "/favicon.ico" }],
