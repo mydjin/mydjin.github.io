@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://mydjin.github.io</id>
+    <title>mydjin的编程宝典</title>
+    <updated>2024-11-05T04:22:45.970Z</updated>
+    <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
+    <link rel="alternate" href="https://mydjin.github.io"/>
+    <link rel="self" href="https://mydjin.github.io/feed.atom"/>
+    <subtitle>feedId:76473931194706944+userId:63112175590810624</subtitle>
+    <entry>
+        <title type="html"><![CDATA[mydjin的编程宝典]]></title>
+        <id>https://mydjin.github.io/</id>
+        <link href="https://mydjin.github.io/">
+        </link>
+        <updated>2024-11-05T04:22:45.858Z</updated>
+        <summary type="html"><![CDATA[贴心的编程学习路线，全面的行业知识百科
+>
+> 作者：[mydjin]
+>
+> 本站地址：https://mydjin.github.io]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[课茶介绍]]></title>
+        <id>https://mydjin.github.io/茶/</id>
+        <link href="https://mydjin.github.io/茶/">
+        </link>
+        <updated>2024-11-05T11:37:03.000Z</updated>
+        <summary type="html"><![CDATA[feedId:76473931194706944+userId:63112175590810624]]></summary>
+    </entry>
+</feed>

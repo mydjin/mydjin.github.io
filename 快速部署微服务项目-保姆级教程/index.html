@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>快速部署微服务项目，保姆级教程 | mydjin的编程宝典</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/favicon.ico">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?2675818a983a3131404cee835018f016";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+      </script>
+    <link rel="alternate" type="application/rss+xml" href="https://mydjin.github.io/rss.xml" title="mydjin的编程宝典 RSS Feed">
+    <link rel="alternate" type="application/atom+xml" href="https://mydjin.github.io/feed.atom" title="mydjin的编程宝典 Atom Feed">
+    <link rel="alternate" type="application/json" href="https://mydjin.github.io/feed.json" title="mydjin的编程宝典 JSON Feed">
+    <meta name="description" content="feedId:76473931194706944+userId:63112175590810624">
+    <meta property="article:modified_time" content="2024-11-05T04:18:24.000Z">
+    <meta property="og:site_name" content="mydjin的编程宝典">
+    <meta property="og:title" content="快速部署微服务项目，保姆级教程">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://mydjin.github.io/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/">
+    <meta name="twitter:title" content="快速部署微服务项目，保姆级教程">
+    <meta name="twitter:url" content="https://mydjin.github.io/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="程序员, 编程, 计算机">
+    <meta property="article:tag" content="程序员">
+    <meta name="keywords" content="知识扫盲, 编程学习, Java, 编程导航, 前端, 开发, 编程分享, 项目, IT, 行业认知, 求职, 面经">
+    
+    <link rel="preload" href="/assets/css/0.styles.85e32e0d.css" as="style"><link rel="preload" href="/assets/js/app.ca9176e6.js" as="script"><link rel="preload" href="/assets/js/2.90fa9889.js" as="script"><link rel="preload" href="/assets/js/279.b29dc997.js" as="script"><link rel="prefetch" href="/assets/js/1.95962c63.js"><link rel="prefetch" href="/assets/js/10.53bff481.js"><link rel="prefetch" href="/assets/js/100.a55e34f6.js"><link rel="prefetch" href="/assets/js/101.04c88272.js"><link rel="prefetch" href="/assets/js/102.a796982b.js"><link rel="prefetch" href="/assets/js/103.3b7cdb80.js"><link rel="prefetch" href="/assets/js/104.a1b4bac6.js"><link rel="prefetch" href="/assets/js/105.e3fffaa3.js"><link rel="prefetch" href="/assets/js/106.7778d2fd.js"><link rel="prefetch" href="/assets/js/107.210d034d.js"><link rel="prefetch" href="/assets/js/108.e2fb951e.js"><link rel="prefetch" href="/assets/js/109.df28d619.js"><link rel="prefetch" href="/assets/js/11.1c9fd1a7.js"><link rel="prefetch" href="/assets/js/110.70d58e21.js"><link rel="prefetch" href="/assets/js/111.c4a6c942.js"><link rel="prefetch" href="/assets/js/112.23dc2f10.js"><link rel="prefetch" href="/assets/js/113.9a518b49.js"><link rel="prefetch" href="/assets/js/114.5b893280.js"><link rel="prefetch" href="/assets/js/115.a838260f.js"><link rel="prefetch" href="/assets/js/116.74eac7d2.js"><link rel="prefetch" href="/assets/js/117.6f32514d.js"><link rel="prefetch" href="/assets/js/118.d78a5ffc.js"><link rel="prefetch" href="/assets/js/119.51c3df6a.js"><link rel="prefetch" href="/assets/js/12.4424d2ef.js"><link rel="prefetch" href="/assets/js/120.909c660e.js"><link rel="prefetch" href="/assets/js/121.8a964723.js"><link rel="prefetch" href="/assets/js/122.a42cb20f.js"><link rel="prefetch" href="/assets/js/123.8ec330d4.js"><link rel="prefetch" href="/assets/js/124.7d23c34c.js"><link rel="prefetch" href="/assets/js/125.4abfc0ce.js"><link rel="prefetch" href="/assets/js/126.78d77227.js"><link rel="prefetch" href="/assets/js/127.cc8eb622.js"><link rel="prefetch" href="/assets/js/128.8fb20130.js"><link rel="prefetch" href="/assets/js/129.08e9ffac.js"><link rel="prefetch" href="/assets/js/13.6d507f6c.js"><link rel="prefetch" href="/assets/js/130.50b34147.js"><link rel="prefetch" href="/assets/js/131.043f02d8.js"><link rel="prefetch" href="/assets/js/132.0ec50a72.js"><link rel="prefetch" href="/assets/js/133.8978f193.js"><link rel="prefetch" href="/assets/js/134.62bd62b2.js"><link rel="prefetch" href="/assets/js/135.7f8ce07d.js"><link rel="prefetch" href="/assets/js/136.e82af524.js"><link rel="prefetch" href="/assets/js/137.c50d4830.js"><link rel="prefetch" href="/assets/js/138.204f19bf.js"><link rel="prefetch" href="/assets/js/139.4503c3f3.js"><link rel="prefetch" href="/assets/js/14.3bf5ed7d.js"><link rel="prefetch" href="/assets/js/140.c842bada.js"><link rel="prefetch" href="/assets/js/141.493148ab.js"><link rel="prefetch" href="/assets/js/142.2ae630fa.js"><link rel="prefetch" href="/assets/js/143.ece18f43.js"><link rel="prefetch" href="/assets/js/144.e4c42920.js"><link rel="prefetch" href="/assets/js/145.b238b55d.js"><link rel="prefetch" href="/assets/js/146.57564991.js"><link rel="prefetch" href="/assets/js/147.ad596355.js"><link rel="prefetch" href="/assets/js/148.d97c2421.js"><link rel="prefetch" href="/assets/js/149.5d56e34c.js"><link rel="prefetch" href="/assets/js/15.09053eb7.js"><link rel="prefetch" href="/assets/js/150.556ed851.js"><link rel="prefetch" href="/assets/js/151.17dba3d0.js"><link rel="prefetch" href="/assets/js/152.3181e138.js"><link rel="prefetch" href="/assets/js/153.4c0431bc.js"><link rel="prefetch" href="/assets/js/154.8a516338.js"><link rel="prefetch" href="/assets/js/155.1e7aea7d.js"><link rel="prefetch" href="/assets/js/156.8ab20124.js"><link rel="prefetch" href="/assets/js/157.d509fdc8.js"><link rel="prefetch" href="/assets/js/158.e47e0cdd.js"><link rel="prefetch" href="/assets/js/159.b15e5ace.js"><link rel="prefetch" href="/assets/js/16.ed0dc1c9.js"><link rel="prefetch" href="/assets/js/160.6bc891e2.js"><link rel="prefetch" href="/assets/js/161.496cdc8e.js"><link rel="prefetch" href="/assets/js/162.98e753ad.js"><link rel="prefetch" href="/assets/js/163.c0c1a099.js"><link rel="prefetch" href="/assets/js/164.3e8e6968.js"><link rel="prefetch" href="/assets/js/165.fd28e05a.js"><link rel="prefetch" href="/assets/js/166.9adc27da.js"><link rel="prefetch" href="/assets/js/167.b706f91c.js"><link rel="prefetch" href="/assets/js/168.05b77850.js"><link rel="prefetch" href="/assets/js/169.7dba4f24.js"><link rel="prefetch" href="/assets/js/17.9671a216.js"><link rel="prefetch" href="/assets/js/170.a7cfced1.js"><link rel="prefetch" href="/assets/js/171.ac7c62ef.js"><link rel="prefetch" href="/assets/js/172.252f0b10.js"><link rel="prefetch" href="/assets/js/173.5b63b70b.js"><link rel="prefetch" href="/assets/js/174.b8d4bd85.js"><link rel="prefetch" href="/assets/js/175.10f40032.js"><link rel="prefetch" href="/assets/js/176.b5544d29.js"><link rel="prefetch" href="/assets/js/177.576c9c60.js"><link rel="prefetch" href="/assets/js/178.5ac7f6b0.js"><link rel="prefetch" href="/assets/js/179.3aa1816c.js"><link rel="prefetch" href="/assets/js/18.88d4d898.js"><link rel="prefetch" href="/assets/js/180.80c1fd1b.js"><link rel="prefetch" href="/assets/js/181.0b034300.js"><link rel="prefetch" href="/assets/js/182.c1b69bc7.js"><link rel="prefetch" href="/assets/js/183.ab63ee55.js"><link rel="prefetch" href="/assets/js/184.3ba62925.js"><link rel="prefetch" href="/assets/js/185.665dc1d0.js"><link rel="prefetch" href="/assets/js/186.1ebb3b5f.js"><link rel="prefetch" href="/assets/js/187.cce7092d.js"><link rel="prefetch" href="/assets/js/188.26d0e52f.js"><link rel="prefetch" href="/assets/js/189.31933b86.js"><link rel="prefetch" href="/assets/js/19.15e0e33d.js"><link rel="prefetch" href="/assets/js/190.900d20d2.js"><link rel="prefetch" href="/assets/js/191.4998845d.js"><link rel="prefetch" href="/assets/js/192.38bb8ff5.js"><link rel="prefetch" href="/assets/js/193.e74ec4f2.js"><link rel="prefetch" href="/assets/js/194.2d1fbc1a.js"><link rel="prefetch" href="/assets/js/195.bdc3f5a5.js"><link rel="prefetch" href="/assets/js/196.9bcee3f0.js"><link rel="prefetch" href="/assets/js/197.169868ac.js"><link rel="prefetch" href="/assets/js/198.06ed1550.js"><link rel="prefetch" href="/assets/js/199.aad407bf.js"><link rel="prefetch" href="/assets/js/20.b92bc8c5.js"><link rel="prefetch" href="/assets/js/200.aefb09c1.js"><link rel="prefetch" href="/assets/js/201.e9cc625d.js"><link rel="prefetch" href="/assets/js/202.759be441.js"><link rel="prefetch" href="/assets/js/203.d5f44033.js"><link rel="prefetch" href="/assets/js/204.95a3d100.js"><link rel="prefetch" href="/assets/js/205.1c903d1e.js"><link rel="prefetch" href="/assets/js/206.ed1614c0.js"><link rel="prefetch" href="/assets/js/207.6ba41417.js"><link rel="prefetch" href="/assets/js/208.b776a505.js"><link rel="prefetch" href="/assets/js/209.8ad192f2.js"><link rel="prefetch" href="/assets/js/21.e0fa86af.js"><link rel="prefetch" href="/assets/js/210.921194ca.js"><link rel="prefetch" href="/assets/js/211.aeed3fc5.js"><link rel="prefetch" href="/assets/js/212.afd6b121.js"><link rel="prefetch" href="/assets/js/213.93e87cb2.js"><link rel="prefetch" href="/assets/js/214.ba3bf1d6.js"><link rel="prefetch" href="/assets/js/215.835e5863.js"><link rel="prefetch" href="/assets/js/216.58faa13e.js"><link rel="prefetch" href="/assets/js/217.beea3853.js"><link rel="prefetch" href="/assets/js/218.7c133f06.js"><link rel="prefetch" href="/assets/js/219.bb5460a6.js"><link rel="prefetch" href="/assets/js/22.28b4e931.js"><link rel="prefetch" href="/assets/js/220.640f5f01.js"><link rel="prefetch" href="/assets/js/221.0e632f17.js"><link rel="prefetch" href="/assets/js/222.088cdcfc.js"><link rel="prefetch" href="/assets/js/223.bd7476ef.js"><link rel="prefetch" href="/assets/js/224.b8267a17.js"><link rel="prefetch" href="/assets/js/225.d51c7bab.js"><link rel="prefetch" href="/assets/js/226.9a8cb259.js"><link rel="prefetch" href="/assets/js/227.2ab900cc.js"><link rel="prefetch" href="/assets/js/228.cf670754.js"><link rel="prefetch" href="/assets/js/229.c5a0b720.js"><link rel="prefetch" href="/assets/js/23.8d0f1689.js"><link rel="prefetch" href="/assets/js/230.256728c4.js"><link rel="prefetch" href="/assets/js/231.66d6f0b1.js"><link rel="prefetch" href="/assets/js/232.253fd433.js"><link rel="prefetch" href="/assets/js/233.8524366a.js"><link rel="prefetch" href="/assets/js/234.114a8801.js"><link rel="prefetch" href="/assets/js/235.168bcd77.js"><link rel="prefetch" href="/assets/js/236.51c762a1.js"><link rel="prefetch" href="/assets/js/237.a23e8bb9.js"><link rel="prefetch" href="/assets/js/238.890b60d7.js"><link rel="prefetch" href="/assets/js/239.d37d1e91.js"><link rel="prefetch" href="/assets/js/24.cd6be417.js"><link rel="prefetch" href="/assets/js/240.25b3f4ec.js"><link rel="prefetch" href="/assets/js/241.bf44942c.js"><link rel="prefetch" href="/assets/js/242.fdf9c542.js"><link rel="prefetch" href="/assets/js/243.787cee71.js"><link rel="prefetch" href="/assets/js/244.636f1792.js"><link rel="prefetch" href="/assets/js/245.8e25d3d7.js"><link rel="prefetch" href="/assets/js/246.b16bb270.js"><link rel="prefetch" href="/assets/js/247.18882e92.js"><link rel="prefetch" href="/assets/js/248.844e7761.js"><link rel="prefetch" href="/assets/js/249.9e12b7c9.js"><link rel="prefetch" href="/assets/js/25.e42c0ff8.js"><link rel="prefetch" href="/assets/js/250.b40aa308.js"><link rel="prefetch" href="/assets/js/251.94a37f41.js"><link rel="prefetch" href="/assets/js/252.cfe7b0fc.js"><link rel="prefetch" href="/assets/js/253.967a1a7c.js"><link rel="prefetch" href="/assets/js/254.2b31459f.js"><link rel="prefetch" href="/assets/js/255.ae5ac562.js"><link rel="prefetch" href="/assets/js/256.bfaf9f58.js"><link rel="prefetch" href="/assets/js/257.a4a90273.js"><link rel="prefetch" href="/assets/js/258.cd1a53cd.js"><link rel="prefetch" href="/assets/js/259.64823f85.js"><link rel="prefetch" href="/assets/js/26.fc6a8e50.js"><link rel="prefetch" href="/assets/js/260.34bcd3d6.js"><link rel="prefetch" href="/assets/js/261.a999b662.js"><link rel="prefetch" href="/assets/js/262.5d92c883.js"><link rel="prefetch" href="/assets/js/263.e6c9dda0.js"><link rel="prefetch" href="/assets/js/264.e870c19a.js"><link rel="prefetch" href="/assets/js/265.da07d4a0.js"><link rel="prefetch" href="/assets/js/266.3672f064.js"><link rel="prefetch" href="/assets/js/267.3038be97.js"><link rel="prefetch" href="/assets/js/268.6c0d152a.js"><link rel="prefetch" href="/assets/js/269.db5bb4e6.js"><link rel="prefetch" href="/assets/js/27.bdc4db69.js"><link rel="prefetch" href="/assets/js/270.e8a9e677.js"><link rel="prefetch" href="/assets/js/271.c65394b1.js"><link rel="prefetch" href="/assets/js/272.d3aad27e.js"><link rel="prefetch" href="/assets/js/273.f099b432.js"><link rel="prefetch" href="/assets/js/274.a61e0f5e.js"><link rel="prefetch" href="/assets/js/275.1381a625.js"><link rel="prefetch" href="/assets/js/276.ec95986a.js"><link rel="prefetch" href="/assets/js/277.5734d45e.js"><link rel="prefetch" href="/assets/js/278.c3f1eee7.js"><link rel="prefetch" href="/assets/js/28.3cff2726.js"><link rel="prefetch" href="/assets/js/280.e16ca1bc.js"><link rel="prefetch" href="/assets/js/281.d106ef7c.js"><link rel="prefetch" href="/assets/js/282.e88cb175.js"><link rel="prefetch" href="/assets/js/283.f4d91dc1.js"><link rel="prefetch" href="/assets/js/284.af0cad1e.js"><link rel="prefetch" href="/assets/js/285.5d2938d7.js"><link rel="prefetch" href="/assets/js/286.d52a1b3f.js"><link rel="prefetch" href="/assets/js/287.c03c5e27.js"><link rel="prefetch" href="/assets/js/288.5bfd0610.js"><link rel="prefetch" href="/assets/js/289.fc5023cc.js"><link rel="prefetch" href="/assets/js/29.34c8bb02.js"><link rel="prefetch" href="/assets/js/290.9ace3073.js"><link rel="prefetch" href="/assets/js/291.1a2bd36f.js"><link rel="prefetch" href="/assets/js/292.443d1f42.js"><link rel="prefetch" href="/assets/js/293.b8467cae.js"><link rel="prefetch" href="/assets/js/294.8a521dcd.js"><link rel="prefetch" href="/assets/js/295.4359115b.js"><link rel="prefetch" href="/assets/js/296.3e387d78.js"><link rel="prefetch" href="/assets/js/297.50fdf372.js"><link rel="prefetch" href="/assets/js/298.264af9c2.js"><link rel="prefetch" href="/assets/js/299.733069e3.js"><link rel="prefetch" href="/assets/js/3.3b992c2f.js"><link rel="prefetch" href="/assets/js/30.14893a3d.js"><link rel="prefetch" href="/assets/js/300.31323975.js"><link rel="prefetch" href="/assets/js/301.020138fa.js"><link rel="prefetch" href="/assets/js/302.8afb6f2d.js"><link rel="prefetch" href="/assets/js/303.6ea82266.js"><link rel="prefetch" href="/assets/js/304.d4a9c798.js"><link rel="prefetch" href="/assets/js/305.4d04e5c7.js"><link rel="prefetch" href="/assets/js/306.9ff398bd.js"><link rel="prefetch" href="/assets/js/307.bd7cc761.js"><link rel="prefetch" href="/assets/js/308.36dd0bbf.js"><link rel="prefetch" href="/assets/js/309.9e33646d.js"><link rel="prefetch" href="/assets/js/31.c614abe3.js"><link rel="prefetch" href="/assets/js/310.4ab1c932.js"><link rel="prefetch" href="/assets/js/311.e9b2e330.js"><link rel="prefetch" href="/assets/js/312.d4e29c23.js"><link rel="prefetch" href="/assets/js/313.4c73ad8d.js"><link rel="prefetch" href="/assets/js/314.a573c2dd.js"><link rel="prefetch" href="/assets/js/315.8e65ee69.js"><link rel="prefetch" href="/assets/js/316.48f90b85.js"><link rel="prefetch" href="/assets/js/317.de9dc0c8.js"><link rel="prefetch" href="/assets/js/318.72c217ca.js"><link rel="prefetch" href="/assets/js/319.4ecbed82.js"><link rel="prefetch" href="/assets/js/32.d349aefa.js"><link rel="prefetch" href="/assets/js/320.82720653.js"><link rel="prefetch" href="/assets/js/321.a93cc85e.js"><link rel="prefetch" href="/assets/js/322.d90d2e62.js"><link rel="prefetch" href="/assets/js/323.07f551bc.js"><link rel="prefetch" href="/assets/js/324.6964319b.js"><link rel="prefetch" href="/assets/js/325.0a2c01a6.js"><link rel="prefetch" href="/assets/js/326.b9f4cf56.js"><link rel="prefetch" href="/assets/js/327.aefd4365.js"><link rel="prefetch" href="/assets/js/328.1342dd92.js"><link rel="prefetch" href="/assets/js/329.89689e86.js"><link rel="prefetch" href="/assets/js/33.66336b6e.js"><link rel="prefetch" href="/assets/js/330.c4d882a9.js"><link rel="prefetch" href="/assets/js/331.63aec1ed.js"><link rel="prefetch" href="/assets/js/332.b9fa7a43.js"><link rel="prefetch" href="/assets/js/333.814f36ae.js"><link rel="prefetch" href="/assets/js/334.193ccfba.js"><link rel="prefetch" href="/assets/js/335.437189b2.js"><link rel="prefetch" href="/assets/js/336.bb1e56c6.js"><link rel="prefetch" href="/assets/js/337.ab3f176b.js"><link rel="prefetch" href="/assets/js/338.5bc5f11c.js"><link rel="prefetch" href="/assets/js/339.19250005.js"><link rel="prefetch" href="/assets/js/34.5b11737d.js"><link rel="prefetch" href="/assets/js/340.202dbb56.js"><link rel="prefetch" href="/assets/js/341.224d79c1.js"><link rel="prefetch" href="/assets/js/342.5e0a1e21.js"><link rel="prefetch" href="/assets/js/343.63a909f8.js"><link rel="prefetch" href="/assets/js/344.308f02c6.js"><link rel="prefetch" href="/assets/js/345.3fc6974a.js"><link rel="prefetch" href="/assets/js/346.a273db2c.js"><link rel="prefetch" href="/assets/js/347.22e5c0bc.js"><link rel="prefetch" href="/assets/js/348.60b950c7.js"><link rel="prefetch" href="/assets/js/349.4f6e610d.js"><link rel="prefetch" href="/assets/js/35.e15aa157.js"><link rel="prefetch" href="/assets/js/350.ccbf99d8.js"><link rel="prefetch" href="/assets/js/351.bde80408.js"><link rel="prefetch" href="/assets/js/352.ff564854.js"><link rel="prefetch" href="/assets/js/353.ff8c87a5.js"><link rel="prefetch" href="/assets/js/354.072b583b.js"><link rel="prefetch" href="/assets/js/355.3ab9ce99.js"><link rel="prefetch" href="/assets/js/356.76219099.js"><link rel="prefetch" href="/assets/js/357.fd163905.js"><link rel="prefetch" href="/assets/js/358.6978282a.js"><link rel="prefetch" href="/assets/js/359.061f9739.js"><link rel="prefetch" href="/assets/js/36.c026d467.js"><link rel="prefetch" href="/assets/js/360.02b27cd8.js"><link rel="prefetch" href="/assets/js/361.7d2c553f.js"><link rel="prefetch" href="/assets/js/362.31c6554d.js"><link rel="prefetch" href="/assets/js/363.8d42731c.js"><link rel="prefetch" href="/assets/js/364.6d68ec82.js"><link rel="prefetch" href="/assets/js/365.4bfcfe71.js"><link rel="prefetch" href="/assets/js/366.0b8ec12d.js"><link rel="prefetch" href="/assets/js/367.0394521f.js"><link rel="prefetch" href="/assets/js/368.840ed15f.js"><link rel="prefetch" href="/assets/js/369.69be4d4a.js"><link rel="prefetch" href="/assets/js/37.02392019.js"><link rel="prefetch" href="/assets/js/370.e61267c2.js"><link rel="prefetch" href="/assets/js/371.5a756507.js"><link rel="prefetch" href="/assets/js/372.cf0ad79d.js"><link rel="prefetch" href="/assets/js/373.99752c5d.js"><link rel="prefetch" href="/assets/js/374.3432f48e.js"><link rel="prefetch" href="/assets/js/375.3abcb464.js"><link rel="prefetch" href="/assets/js/376.a6c4e761.js"><link rel="prefetch" href="/assets/js/377.d87ed76e.js"><link rel="prefetch" href="/assets/js/378.e69c4ed6.js"><link rel="prefetch" href="/assets/js/379.fa42df55.js"><link rel="prefetch" href="/assets/js/38.ebc6587d.js"><link rel="prefetch" href="/assets/js/380.28042220.js"><link rel="prefetch" href="/assets/js/381.898692fe.js"><link rel="prefetch" href="/assets/js/382.26f59491.js"><link rel="prefetch" href="/assets/js/383.4b508948.js"><link rel="prefetch" href="/assets/js/384.f47ae715.js"><link rel="prefetch" href="/assets/js/385.ce09d5a0.js"><link rel="prefetch" href="/assets/js/386.2f19f665.js"><link rel="prefetch" href="/assets/js/387.f33d6b90.js"><link rel="prefetch" href="/assets/js/388.a1bb9311.js"><link rel="prefetch" href="/assets/js/389.0fcb30b8.js"><link rel="prefetch" href="/assets/js/39.2459bd9f.js"><link rel="prefetch" href="/assets/js/390.592115d1.js"><link rel="prefetch" href="/assets/js/391.0e11d967.js"><link rel="prefetch" href="/assets/js/392.113af5b8.js"><link rel="prefetch" href="/assets/js/393.6c03af91.js"><link rel="prefetch" href="/assets/js/394.f4783371.js"><link rel="prefetch" href="/assets/js/395.11f47649.js"><link rel="prefetch" href="/assets/js/396.371dcdba.js"><link rel="prefetch" href="/assets/js/397.ad54d021.js"><link rel="prefetch" href="/assets/js/398.4bd3251b.js"><link rel="prefetch" href="/assets/js/399.883bb730.js"><link rel="prefetch" href="/assets/js/4.f2d7bd02.js"><link rel="prefetch" href="/assets/js/40.7455c7f1.js"><link rel="prefetch" href="/assets/js/400.e93bfe0b.js"><link rel="prefetch" href="/assets/js/401.d0344052.js"><link rel="prefetch" href="/assets/js/402.0b9d1ddc.js"><link rel="prefetch" href="/assets/js/403.fc1a18df.js"><link rel="prefetch" href="/assets/js/404.2a1c5d75.js"><link rel="prefetch" href="/assets/js/405.8666b51d.js"><link rel="prefetch" href="/assets/js/406.6d8fe65d.js"><link rel="prefetch" href="/assets/js/407.9d390aa1.js"><link rel="prefetch" href="/assets/js/408.175c5171.js"><link rel="prefetch" href="/assets/js/409.ebc67267.js"><link rel="prefetch" href="/assets/js/41.52cb617e.js"><link rel="prefetch" href="/assets/js/410.62b99ad5.js"><link rel="prefetch" href="/assets/js/411.67cb3a14.js"><link rel="prefetch" href="/assets/js/412.eb6f84e3.js"><link rel="prefetch" href="/assets/js/413.fa6252a4.js"><link rel="prefetch" href="/assets/js/414.36e38dd2.js"><link rel="prefetch" href="/assets/js/415.59ba57a8.js"><link rel="prefetch" href="/assets/js/416.b43f42a8.js"><link rel="prefetch" href="/assets/js/417.5fcd3218.js"><link rel="prefetch" href="/assets/js/418.43c71bc2.js"><link rel="prefetch" href="/assets/js/419.a0e1f8d6.js"><link rel="prefetch" href="/assets/js/42.140785ab.js"><link rel="prefetch" href="/assets/js/420.9736181b.js"><link rel="prefetch" href="/assets/js/421.aa4b3ba9.js"><link rel="prefetch" href="/assets/js/422.e7dd7304.js"><link rel="prefetch" href="/assets/js/423.74b3ac46.js"><link rel="prefetch" href="/assets/js/424.276dba4b.js"><link rel="prefetch" href="/assets/js/425.6ccc9ee0.js"><link rel="prefetch" href="/assets/js/426.3f3505d2.js"><link rel="prefetch" href="/assets/js/427.232a729b.js"><link rel="prefetch" href="/assets/js/428.db56fb8f.js"><link rel="prefetch" href="/assets/js/429.60c11381.js"><link rel="prefetch" href="/assets/js/43.2601c520.js"><link rel="prefetch" href="/assets/js/430.71fd2810.js"><link rel="prefetch" href="/assets/js/431.71dd288e.js"><link rel="prefetch" href="/assets/js/432.5ab7d2f9.js"><link rel="prefetch" href="/assets/js/433.8c71e28f.js"><link rel="prefetch" href="/assets/js/434.1c527f3a.js"><link rel="prefetch" href="/assets/js/435.a0c0ed2c.js"><link rel="prefetch" href="/assets/js/436.edb22f58.js"><link rel="prefetch" href="/assets/js/437.fbb529fc.js"><link rel="prefetch" href="/assets/js/438.c092773d.js"><link rel="prefetch" href="/assets/js/439.d57f0208.js"><link rel="prefetch" href="/assets/js/44.97362157.js"><link rel="prefetch" href="/assets/js/440.84c04fc8.js"><link rel="prefetch" href="/assets/js/441.1cd08b66.js"><link rel="prefetch" href="/assets/js/442.606cc392.js"><link rel="prefetch" href="/assets/js/443.181c5f2a.js"><link rel="prefetch" href="/assets/js/444.fb01aa5c.js"><link rel="prefetch" href="/assets/js/445.a4c26de7.js"><link rel="prefetch" href="/assets/js/446.11c0e3c9.js"><link rel="prefetch" href="/assets/js/447.e705c7b4.js"><link rel="prefetch" href="/assets/js/448.969cf06a.js"><link rel="prefetch" href="/assets/js/449.e9a3c878.js"><link rel="prefetch" href="/assets/js/45.06a36d76.js"><link rel="prefetch" href="/assets/js/450.8182dc37.js"><link rel="prefetch" href="/assets/js/451.39ea8a65.js"><link rel="prefetch" href="/assets/js/452.539614f6.js"><link rel="prefetch" href="/assets/js/453.0672df7f.js"><link rel="prefetch" href="/assets/js/454.4ffc883d.js"><link rel="prefetch" href="/assets/js/455.30784596.js"><link rel="prefetch" href="/assets/js/456.5bea85cc.js"><link rel="prefetch" href="/assets/js/457.b93d24d5.js"><link rel="prefetch" href="/assets/js/458.e2e8a163.js"><link rel="prefetch" href="/assets/js/459.b67431b3.js"><link rel="prefetch" href="/assets/js/46.0113a453.js"><link rel="prefetch" href="/assets/js/460.347e1323.js"><link rel="prefetch" href="/assets/js/461.48dd8add.js"><link rel="prefetch" href="/assets/js/462.bf6485be.js"><link rel="prefetch" href="/assets/js/463.fd39d1a0.js"><link rel="prefetch" href="/assets/js/464.5ee33d18.js"><link rel="prefetch" href="/assets/js/465.cbb45bcb.js"><link rel="prefetch" href="/assets/js/466.d7a0fc00.js"><link rel="prefetch" href="/assets/js/467.eededd6e.js"><link rel="prefetch" href="/assets/js/468.998835ce.js"><link rel="prefetch" href="/assets/js/469.3c3b247b.js"><link rel="prefetch" href="/assets/js/47.217f876d.js"><link rel="prefetch" href="/assets/js/470.a7951a8c.js"><link rel="prefetch" href="/assets/js/471.8d35797f.js"><link rel="prefetch" href="/assets/js/472.587746dc.js"><link rel="prefetch" href="/assets/js/473.7c1f9b89.js"><link rel="prefetch" href="/assets/js/474.0cce0cc8.js"><link rel="prefetch" href="/assets/js/475.58473606.js"><link rel="prefetch" href="/assets/js/476.f4df6cae.js"><link rel="prefetch" href="/assets/js/477.df874ffc.js"><link rel="prefetch" href="/assets/js/478.a2800fe4.js"><link rel="prefetch" href="/assets/js/479.2afdc224.js"><link rel="prefetch" href="/assets/js/48.ed19f21d.js"><link rel="prefetch" href="/assets/js/480.5b8d8e6a.js"><link rel="prefetch" href="/assets/js/481.4d517136.js"><link rel="prefetch" href="/assets/js/482.dfad6ba1.js"><link rel="prefetch" href="/assets/js/483.77332886.js"><link rel="prefetch" href="/assets/js/484.7dd5b0b4.js"><link rel="prefetch" href="/assets/js/485.b4568134.js"><link rel="prefetch" href="/assets/js/486.584681f1.js"><link rel="prefetch" href="/assets/js/487.bd665b62.js"><link rel="prefetch" href="/assets/js/488.28023f1f.js"><link rel="prefetch" href="/assets/js/489.68580011.js"><link rel="prefetch" href="/assets/js/49.7979790b.js"><link rel="prefetch" href="/assets/js/490.56c45b3d.js"><link rel="prefetch" href="/assets/js/491.af16327e.js"><link rel="prefetch" href="/assets/js/492.6090b70d.js"><link rel="prefetch" href="/assets/js/493.e5851e28.js"><link rel="prefetch" href="/assets/js/494.3af98636.js"><link rel="prefetch" href="/assets/js/495.7bcc89aa.js"><link rel="prefetch" href="/assets/js/496.13d0e2dc.js"><link rel="prefetch" href="/assets/js/497.c2fe9234.js"><link rel="prefetch" href="/assets/js/498.29378a4e.js"><link rel="prefetch" href="/assets/js/499.2ea0e6cc.js"><link rel="prefetch" href="/assets/js/5.45269de3.js"><link rel="prefetch" href="/assets/js/50.be09bb22.js"><link rel="prefetch" href="/assets/js/500.6d27ba01.js"><link rel="prefetch" href="/assets/js/501.f001c8a3.js"><link rel="prefetch" href="/assets/js/502.7e55d47d.js"><link rel="prefetch" href="/assets/js/503.2bfdcdd5.js"><link rel="prefetch" href="/assets/js/504.a139e89d.js"><link rel="prefetch" href="/assets/js/505.4a4efa5b.js"><link rel="prefetch" href="/assets/js/506.63f8fe80.js"><link rel="prefetch" href="/assets/js/507.61390d6a.js"><link rel="prefetch" href="/assets/js/508.1686008b.js"><link rel="prefetch" href="/assets/js/509.08c8359c.js"><link rel="prefetch" href="/assets/js/51.6187815f.js"><link rel="prefetch" href="/assets/js/510.ac63f57a.js"><link rel="prefetch" href="/assets/js/511.645d68f0.js"><link rel="prefetch" href="/assets/js/512.0a1eff60.js"><link rel="prefetch" href="/assets/js/513.28738f02.js"><link rel="prefetch" href="/assets/js/514.9fb3fd2f.js"><link rel="prefetch" href="/assets/js/515.42fb0b96.js"><link rel="prefetch" href="/assets/js/516.9cfe17a0.js"><link rel="prefetch" href="/assets/js/517.88736bab.js"><link rel="prefetch" href="/assets/js/518.37146c61.js"><link rel="prefetch" href="/assets/js/519.6e3ceb53.js"><link rel="prefetch" href="/assets/js/52.6a97343d.js"><link rel="prefetch" href="/assets/js/520.257dac06.js"><link rel="prefetch" href="/assets/js/521.2841262e.js"><link rel="prefetch" href="/assets/js/522.b15eaf61.js"><link rel="prefetch" href="/assets/js/523.95b628bd.js"><link rel="prefetch" href="/assets/js/524.ba1e8c47.js"><link rel="prefetch" href="/assets/js/525.45222c6c.js"><link rel="prefetch" href="/assets/js/526.d4acefb2.js"><link rel="prefetch" href="/assets/js/527.c1da7c1f.js"><link rel="prefetch" href="/assets/js/528.8e4c3a12.js"><link rel="prefetch" href="/assets/js/529.fb047a58.js"><link rel="prefetch" href="/assets/js/53.57721401.js"><link rel="prefetch" href="/assets/js/530.fdb06122.js"><link rel="prefetch" href="/assets/js/531.eadff1bb.js"><link rel="prefetch" href="/assets/js/532.1b6f984d.js"><link rel="prefetch" href="/assets/js/533.237962be.js"><link rel="prefetch" href="/assets/js/534.e7a01b36.js"><link rel="prefetch" href="/assets/js/535.8ab84010.js"><link rel="prefetch" href="/assets/js/536.5d740b89.js"><link rel="prefetch" href="/assets/js/537.83c2c534.js"><link rel="prefetch" href="/assets/js/538.2c5d648f.js"><link rel="prefetch" href="/assets/js/539.8b8cfd81.js"><link rel="prefetch" href="/assets/js/54.01547790.js"><link rel="prefetch" href="/assets/js/540.be82797c.js"><link rel="prefetch" href="/assets/js/541.0c3b7d05.js"><link rel="prefetch" href="/assets/js/542.6a6ba22b.js"><link rel="prefetch" href="/assets/js/543.be804188.js"><link rel="prefetch" href="/assets/js/544.f36011ef.js"><link rel="prefetch" href="/assets/js/545.d5c44fcf.js"><link rel="prefetch" href="/assets/js/546.efbcc9ca.js"><link rel="prefetch" href="/assets/js/547.2ec54268.js"><link rel="prefetch" href="/assets/js/548.3fc6d859.js"><link rel="prefetch" href="/assets/js/55.30a1d36a.js"><link rel="prefetch" href="/assets/js/56.7ac00a35.js"><link rel="prefetch" href="/assets/js/57.e06fcaa1.js"><link rel="prefetch" href="/assets/js/58.e00d2277.js"><link rel="prefetch" href="/assets/js/59.8783af8e.js"><link rel="prefetch" href="/assets/js/6.708fb5a1.js"><link rel="prefetch" href="/assets/js/60.9751461e.js"><link rel="prefetch" href="/assets/js/61.d751e654.js"><link rel="prefetch" href="/assets/js/62.0d877c34.js"><link rel="prefetch" href="/assets/js/63.3379e410.js"><link rel="prefetch" href="/assets/js/64.c71db64f.js"><link rel="prefetch" href="/assets/js/65.70960e30.js"><link rel="prefetch" href="/assets/js/66.5977ab85.js"><link rel="prefetch" href="/assets/js/67.5c4c4096.js"><link rel="prefetch" href="/assets/js/68.98b6d6cd.js"><link rel="prefetch" href="/assets/js/69.3b204b6c.js"><link rel="prefetch" href="/assets/js/7.84d9d6d9.js"><link rel="prefetch" href="/assets/js/70.f773f475.js"><link rel="prefetch" href="/assets/js/71.d862e593.js"><link rel="prefetch" href="/assets/js/72.9763605f.js"><link rel="prefetch" href="/assets/js/73.b50e7df6.js"><link rel="prefetch" href="/assets/js/74.59f7d24f.js"><link rel="prefetch" href="/assets/js/75.337176b6.js"><link rel="prefetch" href="/assets/js/76.fd5b5400.js"><link rel="prefetch" href="/assets/js/77.5e15fca7.js"><link rel="prefetch" href="/assets/js/78.bd27dcc0.js"><link rel="prefetch" href="/assets/js/79.42c00f93.js"><link rel="prefetch" href="/assets/js/80.62008525.js"><link rel="prefetch" href="/assets/js/81.bb7abc0c.js"><link rel="prefetch" href="/assets/js/82.8d4f127d.js"><link rel="prefetch" href="/assets/js/83.6dda19b3.js"><link rel="prefetch" href="/assets/js/84.b9c2dabe.js"><link rel="prefetch" href="/assets/js/85.83dccd60.js"><link rel="prefetch" href="/assets/js/86.26361b94.js"><link rel="prefetch" href="/assets/js/87.4ded3090.js"><link rel="prefetch" href="/assets/js/88.f164a0d8.js"><link rel="prefetch" href="/assets/js/89.dd82a1d7.js"><link rel="prefetch" href="/assets/js/90.5987af52.js"><link rel="prefetch" href="/assets/js/91.f147e978.js"><link rel="prefetch" href="/assets/js/92.8660185b.js"><link rel="prefetch" href="/assets/js/93.a571b147.js"><link rel="prefetch" href="/assets/js/94.821fe0c0.js"><link rel="prefetch" href="/assets/js/95.4348b0a3.js"><link rel="prefetch" href="/assets/js/96.75fb6c75.js"><link rel="prefetch" href="/assets/js/97.7282f158.js"><link rel="prefetch" href="/assets/js/98.cbb1a9bc.js"><link rel="prefetch" href="/assets/js/99.0860fa5f.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.758908b5.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.85e32e0d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="mydjin的编程宝典" class="logo"> <span class="site-name can-hide">mydjin的编程宝典</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="IT技术" class="dropdown-title"><span class="title">IT技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="IT技术" class="mobile-dropdown-title"><span class="title">IT技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/学习路线/" class="nav-link">
+  学习路线
+</a></li><li class="dropdown-item"><!----> <a href="/IT技术/#操作系统" class="nav-link">
+  操作系统
+</a></li><li class="dropdown-item"><!----> <a href="/IT技术/#Java" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/IT技术/#Golang" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/IT技术/#C++" class="nav-link">
+  C++
+</a></li><li class="dropdown-item"><!----> <a href="/IT技术/#C#" class="nav-link">
+  C#
+</a></li><li class="dropdown-item"><!----> <a href="/IT技术/#Python" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/IT技术/#前端" class="nav-link">
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/IT技术/#数据库" class="nav-link">
+  数据库
+</a></li><li class="dropdown-item"><!----> <a href="/IT技术/#大数据" class="nav-link">
+  大数据
+</a></li><li class="dropdown-item"><!----> <a href="/IT技术/#微服务" class="nav-link">
+  微服务
+</a></li><li class="dropdown-item"><!----> <a href="/IT技术/#AIGC" class="nav-link">
+  AIGC
+</a></li><li class="dropdown-item"><!----> <a href="/IT技术/#安全" class="nav-link">
+  安全
+</a></li><li class="dropdown-item"><!----> <a href="/IT技术/#其他" class="nav-link">
+  其他
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目实战" class="dropdown-title"><span class="title">项目实战</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目实战" class="mobile-dropdown-title"><span class="title">项目实战</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/项目实战/代码生成器共享平台.html" class="nav-link">
+  代码生成器共享平台
+</a></li><li class="dropdown-item"><!----> <a href="/项目实战/聚合搜索平台.html" class="nav-link">
+  聚合搜索平台
+</a></li><li class="dropdown-item"><!----> <a href="/项目实战/API 开放平台.html" class="nav-link">
+  API 开放平台
+</a></li><li class="dropdown-item"><!----> <a href="/项目实战/用户中心项目.html" class="nav-link">
+  用户中心项目
+</a></li><li class="dropdown-item"><!----> <a href="/项目实战/Java 后端万用项目模板.html" class="nav-link">
+  Java 后端万用项目模板
+</a></li></ul></div></div><div class="nav-item"><a href="/知识碎片/" class="nav-link">
+  知识碎片
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="行业认知" class="dropdown-title"><span class="title">行业认知</span> <span class="arrow down"></span></button> <button type="button" aria-label="行业认知" class="mobile-dropdown-title"><span class="title">行业认知</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/行业认知/电力系统/电力系统.html" class="nav-link">
+  电力系统
+</a></li><li class="dropdown-item"><!----> <a href="/行业认知/医疗器械IVD/医疗器械IVD.html" class="nav-link">
+  医疗器械IVD
+</a></li><li class="dropdown-item"><!----> <a href="/行业认知/在线教育/在线教育.html" class="nav-link">
+  在线教育
+</a></li></ul></div></div><div class="nav-item"><a href="/茶/" class="nav-link">
+  茶
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="国学" class="dropdown-title"><span class="title">国学</span> <span class="arrow down"></span></button> <button type="button" aria-label="国学" class="mobile-dropdown-title"><span class="title">国学</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/国学/经典/国学经典.html" class="nav-link">
+  经典
+</a></li><li class="dropdown-item"><!----> <a href="/国学/儒学/儒学.html" class="nav-link">
+  儒学
+</a></li><li class="dropdown-item"><!----> <a href="/国学/道教/道教.html" class="nav-link">
+  道教
+</a></li><li class="dropdown-item"><!----> <a href="/国学/佛教/佛教.html" class="nav-link">
+  佛教
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="作者" class="dropdown-title"><span class="title">作者</span> <span class="arrow down"></span></button> <button type="button" aria-label="作者" class="mobile-dropdown-title"><span class="title">作者</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/编程分享/#入门必看-学习路线" class="nav-link">
+  入门必看-学习路线
+</a></li><li class="dropdown-item"><!----> <a href="/编程分享/#学习指南" class="nav-link">
+  学习指南
+</a></li><li class="dropdown-item"><!----> <a href="/编程分享/#开发经验" class="nav-link">
+  开发经验
+</a></li><li class="dropdown-item"><!----> <a href="/编程分享/#求职经验" class="nav-link">
+  求职经验
+</a></li><li class="dropdown-item"><!----> <a href="/编程分享/#职场经验" class="nav-link">
+  职场经验
+</a></li><li class="dropdown-item"><!----> <a href="/编程分享/#技术分享" class="nav-link">
+  技术分享
+</a></li><li class="dropdown-item"><!----> <a href="/编程分享/#实战教程" class="nav-link">
+  实战教程
+</a></li><li class="dropdown-item"><!----> <a href="/编程分享/#其他" class="nav-link">
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/编程分享/#📚-项目教程" class="nav-link">
+  项目教程
+</a></li><li class="dropdown-item"><!----> <a href="/编程分享/#个人作品" class="nav-link">
+  个人作品
+</a></li><li class="dropdown-item"><!----> <a href="/编程分享/#🎁-编程资源" class="nav-link">
+  编程资源
+</a></li><li class="dropdown-item"><!----> <a href="/编程分享/#🌐-科技科普" class="nav-link">
+  科技科普
+</a></li></ul></div></div> <a href="https://github.com/mydjin/mydjin.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="IT技术" class="dropdown-title"><span class="title">IT技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="IT技术" class="mobile-dropdown-title"><span class="title">IT技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/学习路线/" class="nav-link">
+  学习路线
+</a></li><li class="dropdown-item"><!----> <a href="/IT技术/#操作系统" class="nav-link">
+  操作系统
+</a></li><li class="dropdown-item"><!----> <a href="/IT技术/#Java" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/IT技术/#Golang" class="nav-link">
+  Golang
+</a></li><li class="dropdown-item"><!----> <a href="/IT技术/#C++" class="nav-link">
+  C++
+</a></li><li class="dropdown-item"><!----> <a href="/IT技术/#C#" class="nav-link">
+  C#
+</a></li><li class="dropdown-item"><!----> <a href="/IT技术/#Python" class="nav-link">
+  Python
+</a></li><li class="dropdown-item"><!----> <a href="/IT技术/#前端" class="nav-link">
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/IT技术/#数据库" class="nav-link">
+  数据库
+</a></li><li class="dropdown-item"><!----> <a href="/IT技术/#大数据" class="nav-link">
+  大数据
+</a></li><li class="dropdown-item"><!----> <a href="/IT技术/#微服务" class="nav-link">
+  微服务
+</a></li><li class="dropdown-item"><!----> <a href="/IT技术/#AIGC" class="nav-link">
+  AIGC
+</a></li><li class="dropdown-item"><!----> <a href="/IT技术/#安全" class="nav-link">
+  安全
+</a></li><li class="dropdown-item"><!----> <a href="/IT技术/#其他" class="nav-link">
+  其他
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="项目实战" class="dropdown-title"><span class="title">项目实战</span> <span class="arrow down"></span></button> <button type="button" aria-label="项目实战" class="mobile-dropdown-title"><span class="title">项目实战</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/项目实战/代码生成器共享平台.html" class="nav-link">
+  代码生成器共享平台
+</a></li><li class="dropdown-item"><!----> <a href="/项目实战/聚合搜索平台.html" class="nav-link">
+  聚合搜索平台
+</a></li><li class="dropdown-item"><!----> <a href="/项目实战/API 开放平台.html" class="nav-link">
+  API 开放平台
+</a></li><li class="dropdown-item"><!----> <a href="/项目实战/用户中心项目.html" class="nav-link">
+  用户中心项目
+</a></li><li class="dropdown-item"><!----> <a href="/项目实战/Java 后端万用项目模板.html" class="nav-link">
+  Java 后端万用项目模板
+</a></li></ul></div></div><div class="nav-item"><a href="/知识碎片/" class="nav-link">
+  知识碎片
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="行业认知" class="dropdown-title"><span class="title">行业认知</span> <span class="arrow down"></span></button> <button type="button" aria-label="行业认知" class="mobile-dropdown-title"><span class="title">行业认知</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/行业认知/电力系统/电力系统.html" class="nav-link">
+  电力系统
+</a></li><li class="dropdown-item"><!----> <a href="/行业认知/医疗器械IVD/医疗器械IVD.html" class="nav-link">
+  医疗器械IVD
+</a></li><li class="dropdown-item"><!----> <a href="/行业认知/在线教育/在线教育.html" class="nav-link">
+  在线教育
+</a></li></ul></div></div><div class="nav-item"><a href="/茶/" class="nav-link">
+  茶
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="国学" class="dropdown-title"><span class="title">国学</span> <span class="arrow down"></span></button> <button type="button" aria-label="国学" class="mobile-dropdown-title"><span class="title">国学</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/国学/经典/国学经典.html" class="nav-link">
+  经典
+</a></li><li class="dropdown-item"><!----> <a href="/国学/儒学/儒学.html" class="nav-link">
+  儒学
+</a></li><li class="dropdown-item"><!----> <a href="/国学/道教/道教.html" class="nav-link">
+  道教
+</a></li><li class="dropdown-item"><!----> <a href="/国学/佛教/佛教.html" class="nav-link">
+  佛教
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="作者" class="dropdown-title"><span class="title">作者</span> <span class="arrow down"></span></button> <button type="button" aria-label="作者" class="mobile-dropdown-title"><span class="title">作者</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/编程分享/#入门必看-学习路线" class="nav-link">
+  入门必看-学习路线
+</a></li><li class="dropdown-item"><!----> <a href="/编程分享/#学习指南" class="nav-link">
+  学习指南
+</a></li><li class="dropdown-item"><!----> <a href="/编程分享/#开发经验" class="nav-link">
+  开发经验
+</a></li><li class="dropdown-item"><!----> <a href="/编程分享/#求职经验" class="nav-link">
+  求职经验
+</a></li><li class="dropdown-item"><!----> <a href="/编程分享/#职场经验" class="nav-link">
+  职场经验
+</a></li><li class="dropdown-item"><!----> <a href="/编程分享/#技术分享" class="nav-link">
+  技术分享
+</a></li><li class="dropdown-item"><!----> <a href="/编程分享/#实战教程" class="nav-link">
+  实战教程
+</a></li><li class="dropdown-item"><!----> <a href="/编程分享/#其他" class="nav-link">
+  其他
+</a></li><li class="dropdown-item"><!----> <a href="/编程分享/#📚-项目教程" class="nav-link">
+  项目教程
+</a></li><li class="dropdown-item"><!----> <a href="/编程分享/#个人作品" class="nav-link">
+  个人作品
+</a></li><li class="dropdown-item"><!----> <a href="/编程分享/#🎁-编程资源" class="nav-link">
+  编程资源
+</a></li><li class="dropdown-item"><!----> <a href="/编程分享/#🌐-科技科普" class="nav-link">
+  科技科普
+</a></li></ul></div></div> <a href="https://github.com/mydjin/mydjin.github.io" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/%E7%BC%96%E7%A8%8B%E5%88%86%E4%BA%AB/" class="sidebar-link">入门必看 - 学习路线</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>入门必看-学习路线</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>学习指南</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>开发经验</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>求职经验</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>职场经验</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>技术分享</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>实战教程</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>项目教程</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>编程资源</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>科技科普</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>其他</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="content"><div style="width:100%"><div class="theme-default-content custom-content content__default"><h1 id="快速部署微服务项目-保姆级教程"><a href="#快速部署微服务项目-保姆级教程" class="header-anchor">#</a> 快速部署微服务项目，保姆级教程</h1> <blockquote><p>本文作者：<a href="https://yuyuanweb.feishu.cn/wiki/Abldw5WkjidySxkKxU2cQdAtnah" target="_blank" rel="noopener noreferrer">程序员mydjin<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>本站地址：<a href="https://codefather.cn" target="_blank" rel="noopener noreferrer">https://codefather.cn<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote> <p>大家好，我是mydjin。</p> <p>项目上线是每位学编程同学必须掌握的基本技能。之前我已经给大家分享过很多种上线单体项目的方法了，今天再出一期微服务项目的部署教程，用一种最简单的方法，带大家轻松部署微服务项目。</p> <p>开始之前，先做个小调研啊，大家更喜欢看 “真实踩坑版” 的教程还是 “压缩纯净版” 的教程呢？</p> <p>本期教程我还是保持自己一贯的风格，依然是保姆级教程，包含了一些踩坑过程和解决方案，大家跟着做就完事儿~</p> <blockquote><p>更推荐看视频版：https://www.bilibili.com/video/BV1Cp4y1F7eA/</p></blockquote> <h2 id="项目介绍"><a href="#项目介绍" class="header-anchor">#</a> 项目介绍</h2> <p>这次的教程以我带大家全程直播手把手开发的、基于 Spring Cloud + Docker 代码沙箱的 <a href="http://mp.weixin.qq.com/s?__biz=MzI1NDczNTAwMA==&amp;mid=2247549858&amp;idx=1&amp;sn=dee63c9111558c81b8ee8921f871ea6f&amp;chksm=e9c2e455deb56d43d79e01c5ff310487fb66e16baef27f664e43a0e8779abd6506194fc216aa&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">在线判题系统<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> 为例，进行演示。</p> <p>这个项目的核心功能是让用户能够在线选题和做题，然后由系统自动判题：</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928283.png" loading="lazy" class="lazy"></p> <p>项目用到的核心依赖包括：MySQL 数据库、Redis 缓存、RabbitMQ 消息队列、Nacos 注册中心</p> <p>涉及的核心服务包括：用户服务、题目服务、判题服务（代码沙箱）、Gateway 网关服务</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928469.png" loading="lazy" class="lazy"></p> <h2 id="传统部署"><a href="#传统部署" class="header-anchor">#</a> 传统部署</h2> <p>对于这样一个项目，如果我们还用传统单机项目的部署方式，一个个打 jar 包、用 Java 命令来启动，会有哪些问题呢？</p> <ol><li>要一个个安装依赖，比如 MySQL 数据库、Redis、消息队列、Nacos，非常麻烦！</li> <li>要一个个打 jar 包、一个个手动运行 jar 包，非常麻烦！</li> <li>不方便集中观察所有服务的运行状态和资源占用情况</li></ol> <p>所以，为了解决这些问题，我们会选用一种更高效的微服务部署方式 —— Docker Compose。</p> <h2 id="docker-compose-介绍"><a href="#docker-compose-介绍" class="header-anchor">#</a> Docker Compose 介绍</h2> <p>在介绍 Docker Compose 前，先简单介绍下 Docker。</p> <p>Docker 是一种容器技术，允许开发者将应用程序和所有依赖项（如代码、库、配置等）制作为 <code>镜像</code>。可以把镜像简单理解为软件安装包，可以在不同的计算机上通过它快速安装和启动应用程序（容器），这些程序独立隔离地运行，不受外部环境的影响。</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928039.png" loading="lazy" class="lazy"></p> <p>如果要部署微服务项目，可能要启动多个 Docker 容器，比如 MySQL 容器、用户服务容器等。这时就需要 Docker Compose 了。它是一个容器编排助手，用于集中管理多个 Docker 容器的启动和协同工作。可以在一个配置文件中集中定义所有容器以及它们的关系。然后，可以使用一行命令启动所有容器，而不需要手动运行多个命令。</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928296.png" loading="lazy" class="lazy"></p> <p>需要注意的是，Docker Compose 通常适用于把所有微服务部署在同一台服务器的场景，在真实的企业级项目中，往往会使用 K8S 等更专业的容器编排和自动化部署工具，更方便地在多个服务器上部署容器。</p> <h2 id="部署流程"><a href="#部署流程" class="header-anchor">#</a> 部署流程</h2> <p>了解了 Docker 和 Docker Compose 的作用后，我们来快速了解下部署流程，分为 2 大阶段 —— 本地部署和服务器部署。</p> <p>一、本地部署</p> <ol><li>梳理服务部署表格</li> <li>Maven 子父模块打包</li> <li>Dockerfile 编写</li> <li>编写环境依赖配置</li> <li>编写服务配置</li> <li>调整程序配置</li> <li>测试访问</li></ol> <p>二、服务端部署</p> <ol><li>准备服务器</li> <li>Docker Compose 安装</li> <li>同步文件</li> <li>获取 jar 包</li> <li>服务启动</li> <li>测试访问</li></ol> <h2 id="一、本地部署"><a href="#一、本地部署" class="header-anchor">#</a> 一、本地部署</h2> <p>第一阶段是本地部署，也可以叫做部署准备。</p> <p>强烈建议大家，比起直接操作线上服务器，最好是先在本地把所有的流程跑通，风险更低、效率更高。</p> <p>这里我使用的是 Mac 操作系统，已经安装了 Docker Desktop 软件，管理 Docker 容器会更方便一些。</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928427.png" loading="lazy" class="lazy"></p> <p>对于本地没有 Docker 环境的同学，这一阶段仔细看一遍有个印象就足够了。可以直接拿我调试好的配置文件在服务器上部署，而不用自己调试。</p> <p>怎么样，够贴心吧！可以叫我 “保姆mydjin”，简称 “保姆皮”。</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928290.png" loading="lazy" class="lazy"></p> <h3 id="_1-1、梳理服务部署表格"><a href="#_1-1、梳理服务部署表格" class="header-anchor">#</a> 1.1、梳理服务部署表格</h3> <p>在部署微服务项目前，首先要规划好要部署哪些服务、以及各服务的关键信息，比如服务名称、版本号、占用端口号、关键配置等。</p> <p>对于我的在线判题项目，梳理好的服务表格如下：</p> <table><thead><tr><th style="text-align:left;">服务名称</th> <th style="text-align:left;">英文名</th> <th style="text-align:left;">端口号</th> <th style="text-align:left;">版本号</th> <th style="text-align:left;">服务类别</th></tr></thead> <tbody><tr><td style="text-align:left;">数据库</td> <td style="text-align:left;">mysql</td> <td style="text-align:left;">3306</td> <td style="text-align:left;">v8</td> <td style="text-align:left;">环境依赖</td></tr> <tr><td style="text-align:left;">缓存</td> <td style="text-align:left;">redis</td> <td style="text-align:left;">6379</td> <td style="text-align:left;">v6</td> <td style="text-align:left;">环境依赖</td></tr> <tr><td style="text-align:left;">消息队列</td> <td style="text-align:left;">rabbitmq</td> <td style="text-align:left;">5672, 15672</td> <td style="text-align:left;">v3.12.6</td> <td style="text-align:left;">环境依赖</td></tr> <tr><td style="text-align:left;">注册中心</td> <td style="text-align:left;">nacos</td> <td style="text-align:left;">8848</td> <td style="text-align:left;">v2.2.0</td> <td style="text-align:left;">环境依赖</td></tr> <tr><td style="text-align:left;">网关服务</td> <td style="text-align:left;">gateway</td> <td style="text-align:left;">8101</td> <td style="text-align:left;">java 8</td> <td style="text-align:left;">业务服务</td></tr> <tr><td style="text-align:left;">用户服务</td> <td style="text-align:left;">yuoj-backend-user-service</td> <td style="text-align:left;">8102</td> <td style="text-align:left;">java 8</td> <td style="text-align:left;">业务服务</td></tr> <tr><td style="text-align:left;">题目服务</td> <td style="text-align:left;">yuoj-backend-question-service</td> <td style="text-align:left;">8103</td> <td style="text-align:left;">java 8</td> <td style="text-align:left;">业务服务</td></tr> <tr><td style="text-align:left;">判题服务</td> <td style="text-align:left;">yuoj-backend-judge-service</td> <td style="text-align:left;">8104</td> <td style="text-align:left;">java 8</td> <td style="text-align:left;">业务服务</td></tr></tbody></table> <p>为什么这里我要划分服务类别为 “环境依赖” 和 “业务服务” 呢？</p> <p>因为在启动服务时，必须要先启动环境依赖，才能启动业务服务，否则就会报类似 “无法连接数据库” 之类的错误。</p> <h3 id="_1-2、maven-子父模块打包"><a href="#_1-2、maven-子父模块打包" class="header-anchor">#</a> 1.2、Maven 子父模块打包</h3> <p>对于微服务项目，我们通常是使用 Maven 的子父模块功能进行管理的。需要部署项目时，不用针对每个子服务单独执行 <code>mvn package</code> 命令进行打包，而是可以一键打包所有服务。</p> <p>想要实现这个功能，需要给子父模块的依赖文件（pom.xml）进行一些配置，主要包括：</p> <h4 id="_1-父模块配置"><a href="#_1-父模块配置" class="header-anchor">#</a> 1）父模块配置</h4> <p>在父模块的 pom.xml 文件中引入 <code>spring-boot-maven-plugin</code> 即可，注意一定不要配置 configuration 和 repackage！</p> <p>示例代码如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;plugin&gt;
+    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;
+    &lt;version&gt;${spring-boot.version}&lt;/version&gt;
+&lt;/plugin&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h4 id="_2-子模块配置"><a href="#_2-子模块配置" class="header-anchor">#</a> 2）子模块配置</h4> <p>修改所有需要启动 Spring Boot 的服务（用户服务、题目服务、判题服务、网关服务）的子模块 pom.xml 文件。</p> <p>主要是增加 executions 配置，使用 spring-boot-maven-plugin 的 repackage 命令来构建子模块，从而自动在构建时将公共模块的依赖打入 jar 包。</p> <p>示例代码如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;plugin&gt;
+    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;
+    &lt;executions&gt;
+        &lt;execution&gt;
+            &lt;id&gt;repackage&lt;/id&gt;
+            &lt;goals&gt;
+                &lt;goal&gt;repackage&lt;/goal&gt;
+            &lt;/goals&gt;
+        &lt;/execution&gt;
+    &lt;/executions&gt;
+&lt;/plugin&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="_1-3、dockerfile-编写"><a href="#_1-3、dockerfile-编写" class="header-anchor">#</a> 1.3、Dockerfile 编写</h3> <p>Dockerfile 是定义 Docker 容器镜像构建过程的文件，包括容器镜像使用的基础环境、容器内的依赖和文件、容器的配置、启动命令等。</p> <p>有了 Dockerfile，我们就能很轻松地制作出自己的容器镜像。</p> <p>虽然 Dockerfile 的写法并不复杂，但我还是建议大家尽量不要自己写，直接去网上找个差不多的项目，复制粘贴别人的 Dockerfile 就足够了！</p> <p>这里mydjin给大家提供 2 种常用的 Spring Boot 项目的 Dockerfile。</p> <h4 id="_1-复制-jar-包版"><a href="#_1-复制-jar-包版" class="header-anchor">#</a> 1）复制 jar 包版</h4> <p>思路：在本地打好 jar 包后，复制 jar 包到容器中运行</p> <p>示例代码如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># 基础镜像
+FROM openjdk:8-jdk-alpine
+
+# 指定工作目录
+WORKDIR /app
+
+# 将 jar 包添加到工作目录，比如 target/yuoj-backend-user-service-0.0.1-SNAPSHOT.jar
+ADD {本地 jar 包路径} . 
+
+# 暴露端口
+EXPOSE {服务端口号}
+
+# 启动命令
+ENTRYPOINT [&quot;java&quot;,&quot;-jar&quot;,&quot;/app/{jar 包名称}&quot;,&quot;--spring.profiles.active=prod&quot;]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h4 id="_2-maven-打包版"><a href="#_2-maven-打包版" class="header-anchor">#</a> 2）Maven 打包版</h4> <p>思路：复制本地代码到容器中，在容器中使用 Maven 打包再运行</p> <p>示例代码如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># 基础镜像
+FROM maven:3.8.1-jdk-8-slim as builder
+
+# 指定工作目录
+WORKDIR /app
+
+# 添加源码文件
+COPY pom.xml .
+COPY src ./src
+
+# 构建 jar 包，跳过测试
+RUN mvn package -DskipTests
+
+# 启动命令
+ENTRYPOINT [&quot;java&quot;,&quot;-jar&quot;,&quot;/app/target/{jar 包名称}&quot;,&quot;--spring.profiles.active=prod&quot;]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>此处由于我们的微服务项目可以一键打好所有子服务的 jar 包，就没必要每个服务单独在容器中打包了，所以选择第一种方式的 Dockerfile。</p> <p>我们需要给每个 Spring Boot 服务（用户服务、题目服务、判题服务、网关服务）都编写一个 Dockerfile，放到每个子服务的根目录下。</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928486.png" loading="lazy" class="lazy"></p> <p>以用户服务为例，示例代码如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># 基础镜像
+FROM openjdk:8-jdk-alpine
+  
+# 指定工作目录
+WORKDIR /app
+  
+# 将 jar 包添加到工作目录，比如 target/yuoj-backend-user-service-0.0.1-SNAPSHOT.jar
+ADD target/yuoj-backend-user-service-0.0.1-SNAPSHOT.jar .
+  
+# 暴露端口
+EXPOSE 8102
+  
+# 启动命令
+ENTRYPOINT [&quot;java&quot;,&quot;-jar&quot;,&quot;/app/yuoj-backend-user-service-0.0.1-SNAPSHOT.jar&quot;,&quot;--spring.profiles.active=prod&quot;]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>建议先在本地利用 IDEA 开发工具调通镜像构建流程，确保每个 Dockerfile 都是可以成功制作镜像的：</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928506.png" loading="lazy" class="lazy"></p> <p>查看容器的启动日志，发现能够启动服务、看到 Spring 图标即可：</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928160.png" loading="lazy" class="lazy"></p> <h3 id="_1-4、编写环境依赖配置"><a href="#_1-4、编写环境依赖配置" class="header-anchor">#</a> 1.4、编写环境依赖配置</h3> <p>接下来，我们就要编写 Docker Compose 的配置文件了，可以根据配置文件快速启动多个服务。</p> <p>之前我们已经梳理了服务部署表格，将服务划分为了 “环境依赖” 和 “业务服务”。</p> <p>由于业务服务依赖 MySQL 等环境依赖，所以需要拆分 2 套 Docker Compose 的配置文件，分别为 <code>docker-compose.env.yml</code> 环境配置和 <code>docker-compose.service.yml</code> 业务服务配置，保证先成功启动依赖，再启动服务。</p> <p>学过 Docker Compose 的同学可能听说过 depends_on 配置，也能决定服务的启动顺序。但是千万注意，depends_on 并不会等待服务完全就绪，只是确保它们在启动时的顺序，并不稳定。</p> <p>如何编写 Docker Compose 文件呢？</p> <p>和 Dockerfile 一样，直接去网上找现成的 Docker Compose file，复制粘贴过来略做修改就能使用了~</p> <p>再配合以下 2 个网站，完全无需记忆 Docker Compose 的写法！</p> <ul><li>Docker Compose file 官方文档：https://docs.docker.com/compose/compose-file/</li> <li>搜索现成的 Docker 镜像：https://hub.docker.com/</li></ul> <p>当然，现在 AI 时代了，还有更简单的方式！</p> <p>直接把我们整理好的服务部署需要喂给 GPT，让 AI 帮我们生成配置即可~</p> <p>示例 prompt：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>现在我需要用 docker compose 来部署 mysql 8（3306 端口）username=root,password=123456
+redis 6（无密码，6379端口）、rabbitmq v.3.12.6（ 5672 端口   password: guest，username: guest）、nacos 2.2.0（8848端口）；还有 4 个本地的 springboot 服务（名称分别为：yuoj-backend-user-service 8102端口、yuoj-backend-question-service 8103端口、yuoj-backend-judge-service 8104端口、yuoj-backend-gateway 8101 端口），每个服务本地目录都有一个 Dockerfile，请帮我自动生成 docker compose 的 yml 配置文件，要求这些服务网络能够连通
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>效果还是非常不错的，只要你描述地足够清楚，生成的配置完全可用！</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928734.png" loading="lazy" class="lazy"></p> <p>由于这篇文章是教程嘛，我就带大家通过调试的方式一步步完成 Docker Compose 文件，最后会把完整的 Docker Compose 文件给大家分享出来，大家直接用就行了~</p> <p>我们要分别在 Docker Compose 中定义 4 大基础依赖，包括 MySQL、Redis、RabbitMQ 和 Nacos。</p> <h4 id="_1-mysql"><a href="#_1-mysql" class="header-anchor">#</a> 1）MySQL</h4> <p>我们不仅要创建一个 MySQL 服务，还要在创建服务后自动创建我们需要的库表结构。</p> <p>所以需要先准备数据库 SQL 脚本文件，里面包含了建库、建表语句，我们把它放在微服务项目根目录的 <code>mysql-init</code> 文件夹中：</p> <p>mydjin带大家做的每个项目都提供了现成的建表语句，这是一个非常好的开发习惯，便于其他人快速启动你的项目。</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928971.png" loading="lazy" class="lazy"></p> <p>由于要在本地启动 MySQL，还需要定义一个文件夹 <code>.mysql-data</code> 来存放 MySQL 的持久化数据，防止容器重启后数据丢失。</p> <p>做好这两点后，就可以编写 <code>docker-compose.env.yml</code> 文件了，先只写一个 MySQL 服务，示例代码如下：</p> <p>关键配置的含义我都写到注释里了</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>version: '3'
+services:
+  mysql:
+    image: mysql:8 # 使用的镜像
+    container_name: yuoj-mysql # 启动的实例名称
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456 # root 用户密码
+    ports:
+      - &quot;3306:3306&quot; # 端口映射
+    volumes:
+      - ./.mysql-data:/var/lib/mysql # 将数据目录挂载到本地目录以进行持久化
+      - ./mysql-init:/docker-entrypoint-initdb.d # 自动执行启动脚本
+    restart: always # 崩溃后自动重启
+    networks:
+      - mynetwork # 指定网络
+networks:
+  mynetwork: # 自定义网络，实现网络互通和隔离
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>写好配置文件后，可以直接在 IDEA 里执行 Docker Compose 文件，调试 MySQL 的运行：</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928011.png" loading="lazy" class="lazy"></p> <p>运行成功后，我们可以在本地成功连接数据库：</p> <p><img alt="" data-src="https://mmbiz.qpic.cn/mmbiz_png/mngWTkJEOYKWGoz54KwujA7s17P0ZCyew5moibS6Oc1NK9Vw7bPbgrbsZBicEQiaDPrGV5GP3L3dGdictrz0cnZkDA/640?wx_fmt=png&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" loading="lazy" class="lazy"></p> <h4 id="_2-redis"><a href="#_2-redis" class="header-anchor">#</a> 2）Redis</h4> <p>Redis 服务的定义和启动操作和 MySQL 服务几乎一致，Redis 的 Docker Compose 配置示例代码如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>version: '3'
+services:
+  redis:
+    image: redis:6
+    container_name: yuoj-redis
+    ports:
+      - &quot;6379:6379&quot;
+    networks:
+      - mynetwork
+    volumes:
+      - ./.redis-data:/data # 持久化
+networks:
+  mynetwork:
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>然后在本地执行 Docker Compose 文件，启动 Redis 服务，并且尝试进入 Terminal 来调试 Redis：</p> <p><img alt="" data-src="https://mmbiz.qpic.cn/mmbiz_png/mngWTkJEOYKWGoz54KwujA7s17P0ZCye45cNbBJT9oV9qqqFFlGQJIu7tVgVZe2YEhibOMC7C7wIDkXNMzZU3yg/640?wx_fmt=png&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" loading="lazy" class="lazy"></p> <h4 id="_3-rabbitmq"><a href="#_3-rabbitmq" class="header-anchor">#</a> 3）RabbitMQ</h4> <p>同 MySQL 和 Redis，RabbitMQ 的 Docker Compose 配置示例代码如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>version: '3'
+services:
+  rabbitmq:
+    image: rabbitmq:3.12.6-management # 支持管理面板的消息队列
+    container_name: yuoj-rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    ports:
+      - &quot;5672:5672&quot;
+      - &quot;15672:15672&quot; # RabbitMQ Dashboard 端口
+    volumes:
+      - ./.rabbitmq-data:/var/lib/rabbitmq # 持久化
+    networks:
+      - mynetwork
+networks:
+  mynetwork:
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>本地执行 Docker Compose 文件，启动 RabbitMQ 服务，然后可以访问 <code>localhost:15672</code> 查看到管理面板，就表示启动成功了~</p> <p>账号密码都是 guest</p> <p><img alt="" data-src="https://mmbiz.qpic.cn/mmbiz_png/mngWTkJEOYKWGoz54KwujA7s17P0ZCyehG7bfEHLT6UBiaVJZYKicuib92TB0REnpBkQGyCyMe1W80amqQxiaiczlzw/640?wx_fmt=png&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" loading="lazy" class="lazy"></p> <h4 id="_4-nacos"><a href="#_4-nacos" class="header-anchor">#</a> 4）Nacos</h4> <p>和其他服务一样，Nacos 也需要编写 Docker Compose 配置。</p> <p>但是在选择 Nacos 镜像时必须要注意，建议选择支持 linux/arm64 架构的镜像版本，比如 <code>v2.2.0-slim</code>，否则后面可能会无法运行：</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928872.png" loading="lazy" class="lazy"></p> <p>Nacos 示例配置文件如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>version: '3'
+services:
+  nacos:
+    image: nacos/nacos-server:v2.2.0-slim
+    container_name: yuoj-nacos
+    ports:
+      - &quot;8848:8848&quot;
+    volumes:
+      - ./.nacos-data:/home/nacos/data
+    networks:
+      - mynetwork
+    environment:
+      - MODE=standalone # 单节点模式启动
+      - PREFER_HOST_MODE=hostname # 支持 hostname
+      - TZ=Asia/Shanghai # 控制时区
+networks:
+  mynetwork:
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>然后在本地执行 Docker Compose 启动 Nacos，访问 <code>localhost:8848/nacos</code> 能够看到管理页面，就表示运行成功了~</p> <p>管理页面的账号和密码默认都是 nacos</p> <p><img alt="" data-src="https://mmbiz.qpic.cn/mmbiz_png/mngWTkJEOYKWGoz54KwujA7s17P0ZCyeo34e4ic4JAzA1fZ2GPgibIQlkWFe7Q3FrmwstcmLOIMdda0Yb6OzgEcA/640?wx_fmt=png&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" loading="lazy" class="lazy"></p> <h4 id="完整-docker-compose-文件"><a href="#完整-docker-compose-文件" class="header-anchor">#</a> 完整 Docker Compose 文件</h4> <p>分别调试完上述服务后，我们把所有的配置拼在一起，就得到了完整的文件，文件名为 <code>docker-compose.env.yml</code>。</p> <p>完整代码如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>version: '3'
+services:
+  mysql:
+    image: mysql:8 # 使用的镜像
+    container_name: yuoj-mysql # 启动的实例名称
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456 # root 用户密码
+    ports:
+      - &quot;3306:3306&quot; # 端口映射
+    volumes:
+      - ./.mysql-data:/var/lib/mysql # 将数据目录挂载到本地目录以进行持久化
+      - ./mysql-init:/docker-entrypoint-initdb.d # 启动脚本
+    restart: always # 崩溃后自动重启
+    networks:
+      - mynetwork # 指定网络
+  redis:
+    image: redis:6
+    container_name: yuoj-redis
+    ports:
+      - &quot;6379:6379&quot;
+    networks:
+      - mynetwork
+    volumes:
+      - ./.redis-data:/data # 持久化
+  rabbitmq:
+    image: rabbitmq:3.12.6-management # 支持管理面板的消息队列
+    container_name: yuoj-rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    ports:
+      - &quot;5672:5672&quot;
+      - &quot;15672:15672&quot; # RabbitMQ Dashboard 端口
+    volumes:
+      - ./.rabbitmq-data:/var/lib/rabbitmq # 持久化
+    networks:
+      - mynetwork
+  nacos:
+    image: nacos/nacos-server:v2.2.0-slim
+    container_name: yuoj-nacos
+    ports:
+      - &quot;8848:8848&quot;
+    volumes:
+      - ./.nacos-data:/home/nacos/data
+    networks:
+      - mynetwork
+    environment:
+      - MODE=standalone # 单节点模式启动
+      - PREFER_HOST_MODE=hostname # 支持 hostname
+      - TZ=Asia/Shanghai # 控制时区
+networks:
+  mynetwork:
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br></div></div><h3 id="_1-5、编写业务服务配置"><a href="#_1-5、编写业务服务配置" class="header-anchor">#</a> 1.5、编写业务服务配置</h3> <p>用同样的方式，我们可以编写业务服务的 Docker Compose 文件，文件名称 <code>docker-compose.service.yml</code>。</p> <p>示例代码如下，其中需要格外关注的配置是 build 和 depends_on：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>version: '3'
+services:
+  yuoj-backend-gateway:
+    container_name: yuoj-backend-gateway
+    build: # 服务的 Docker 构建文件位置
+      context: ./yuoj-backend-gateway
+      dockerfile: Dockerfile
+    ports:
+      - &quot;8101:8101&quot;
+    networks:
+      - mynetwork
+  
+  yuoj-backend-user-service:
+    container_name: yuoj-backend-user-service
+    build:
+      context: ./yuoj-backend-user-service
+      dockerfile: Dockerfile
+    ports:
+      - &quot;8102:8102&quot;
+    networks:
+      - mynetwork
+    depends_on: # 本服务依赖的服务，控制启动先后顺序
+      - yuoj-backend-gateway
+
+  yuoj-backend-question-service:
+    container_name: yuoj-backend-question-service
+    build:
+      context: ./yuoj-backend-question-service
+      dockerfile: Dockerfile
+    ports:
+      - &quot;8103:8103&quot;
+    networks:
+      - mynetwork
+    depends_on:
+      - yuoj-backend-user-service
+      - yuoj-backend-gateway
+
+  yuoj-backend-judge-service:
+    container_name: yuoj-backend-judge-service
+    build:
+      context: ./yuoj-backend-judge-service
+      dockerfile: Dockerfile
+    ports:
+      - &quot;8104:8104&quot;
+    networks:
+      - mynetwork
+    depends_on:
+      - yuoj-backend-user-service
+      - yuoj-backend-question-service
+      - yuoj-backend-gateway
+
+# 网络，不定义的话就是默认网络
+networks:
+  mynetwork:
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br></div></div><h3 id="_1-6、调整程序配置"><a href="#_1-6、调整程序配置" class="header-anchor">#</a> 1.6、调整程序配置</h3> <p>编写好上述配置文件后，本地尝试运行 Docker Compose 业务服务，结果发现：报错啦！依赖服务的地址访问不通！</p> <p>这是由于之前我们的项目访问依赖服务时，全部是使用了固定的 IP 地址（比如 localhost），而容器内部的 localhost（或 127.0.0.1）通常指向容器本身，而不是宿主主机。所以为了在容器内访问其他服务，程序中应该使用服务名称而不是 localhost。</p> <p>我们给每个 Spring Boot 服务都增加一套 prod 上线配置，在配置中更改服务调用地址。</p> <p>用户服务、题目服务和判题服务的 <code>application-prod.yml</code> 配置修改如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code># 生产环境配置文件
+spring:
+  # 数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mysql:3306/yuoj # localhost 改为 mysql
+    username: root
+    password: 123456
+  # Redis 配置
+  redis:
+    database: 1
+    host: redis # localhost 改为 redis
+    port: 6379
+    timeout: 5000
+  cloud:
+    nacos:
+      discovery:
+        server-addr: nacos:8848 # localhost 改为 nacos
+  rabbitmq:
+    host: rabbitmq # localhost 改为 rabbitmq
+    port: 5672
+    password: guest
+    username: guest
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><p>Gateway 网关服务的配置修改如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: nacos:8848 # localhost 改为 nacos
+    gateway:
+      routes:
+        - id: yuoj-backend-user-service
+          uri: lb://yuoj-backend-user-service
+          predicates:
+            - Path=/api/user/**
+        - id: yuoj-backend-question-service
+          uri: lb://yuoj-backend-question-service
+          predicates:
+            - Path=/api/question/**
+        - id: yuoj-backend-judge-service
+          uri: lb://yuoj-backend-judge-service
+          predicates:
+            - Path=/api/judge/**
+  application:
+    name: yuoj-backend-gateway
+  main:
+    web-application-type: reactive
+server:
+  port: 8101
+knife4j:
+  gateway:
+    enabled: true
+    strategy: discover
+    discover:
+      enabled: true
+      version: swagger2
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><p>然后执行 <code>mvn package</code> 命令重新打包、执行 Docker Compose。</p> <p>结果发现大多数服务都启动了，但是判题服务还有报错。</p> <p><img alt="" data-src="https://mmbiz.qpic.cn/mmbiz_png/mngWTkJEOYKWGoz54KwujA7s17P0ZCyeL0LEVCoInX5rCJFib6PvGcJrzn9XYUAyFBCI0hACtAo14NU1WtKOMKg/640?wx_fmt=png&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" loading="lazy" class="lazy"></p> <p>这是因为程序在创建消息队列时存在硬编码的变量，指定了 host 为 &quot;localhost&quot;，示例代码如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ConnectionFactory factory = new ConnectionFactory();
+factory.setHost(&quot;localhost&quot;);
+Connection connection = factory.newConnection();
+Channel channel = connection.createChannel();
+String EXCHANGE_NAME = &quot;code_exchange&quot;;
+channel.exchangeDeclare(EXCHANGE_NAME, &quot;direct&quot;);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>举这个例子是为了告诉大家，在程序中尽量不要写固定 IP 或域名，全部改为动态读取配置文件，便于修改。</p> <p>示例修改后的代码如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>/**
+ * 用于创建测试程序用到的交换机和队列（只用在程序启动前执行一次）
+ */
+@Slf4j
+@Component
+public class InitRabbitMqBean {
+
+    @Value(&quot;${spring.rabbitmq.host:localhost}&quot;)
+    private String host;
+
+    @PostConstruct
+    public void init() {
+        try {
+            ConnectionFactory factory = new ConnectionFactory();
+            factory.setHost(host);
+            Connection connection = factory.newConnection();
+            Channel channel = connection.createChannel();
+            String EXCHANGE_NAME = &quot;code_exchange&quot;;
+            channel.exchangeDeclare(EXCHANGE_NAME, &quot;direct&quot;);
+
+            // 创建队列，随机分配一个队列名称
+            String queueName = &quot;code_queue&quot;;
+            channel.queueDeclare(queueName, true, false, false, null);
+            channel.queueBind(queueName, EXCHANGE_NAME, &quot;my_routingKey&quot;);
+            log.info(&quot;消息队列启动成功&quot;);
+        } catch (Exception e) {
+            log.error(&quot;消息队列启动失败&quot;);
+        }
+    }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><h3 id="_1-7、测试访问"><a href="#_1-7、测试访问" class="header-anchor">#</a> 1.7、测试访问</h3> <p>修复上述问题后，所有服务都可以通过 Docker Compose 文件启动了。</p> <p>然后我们访问 <code>localhost:8101/doc.html</code> 网关地址，能够看到 Swagger 聚合接口文档。</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928086.png" loading="lazy" class="lazy"></p> <p>依次调用用户注册 =&gt; 登录 =&gt; 获取登录用户信息 =&gt; 创建题目接口，全部执行成功。</p> <p>至此，第一阶段就完成啦。</p> <h2 id="二、服务器部署"><a href="#二、服务器部署" class="header-anchor">#</a> 二、服务器部署</h2> <p>在第二阶段，我们的目标就是在真实的 Linux 服务器上部署微服务项目。有了第一阶段的准备，第二阶段简直可以说是易如反掌！</p> <h3 id="_2-1、准备服务器"><a href="#_2-1、准备服务器" class="header-anchor">#</a> 2.1、准备服务器</h3> <p>首先，我们要有一台 Linux 服务器。</p> <p>选择服务器前，我们必须要评估下微服务项目的内存占用，千万别把服务器的内存买小了！</p> <p>可以使用 Docker Desktop 直接查看内存占用，虚拟机内存大概占用了 8 个 G、容器实际内存占用了 4 个 G：</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928105.png" loading="lazy" class="lazy"></p> <p>那我们搞多少内存的服务器呢？</p> <p>我猜很多同学会说 8 G，奈何我天生反骨，明知山有虎偏向虎山行（主要是想省 💰），我就搞一台 2 核 4 G 的服务器吧（发行版是 CentOS 7.9 Linux），咱们来猜一猜它够不够部署这套有 4 个业务服务的微服务项目呢？</p> <p>咱们一起来见证下！</p> <h3 id="_2-2、docker-compose-安装"><a href="#_2-2、docker-compose-安装" class="header-anchor">#</a> 2.2、Docker Compose 安装</h3> <p>有了服务器后，直接参考 Docker Compose 官方文档来安装。这里我们使用 Docker Compose V2 版本，相比 V1 版本统一了命令，使用更方便：</p> <p>Docker Compose V2 地址：https://docs.docker.com/compose/migrate/</p> <p>Docker Compose Linux 安装：https://docs.docker.com/compose/install/linux/#install-using-the-repository</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928154.png" loading="lazy" class="lazy"></p> <p>安装过程很简单，跟着官方文档来就行了，主要包括以下几个步骤：</p> <p>1）设定安装来源：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>sudo yum install -y yum-utils
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>2）安装 Docker 和 Docker Compose：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>3）启动 Docker：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>sudo systemctl start docker
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>4）测试 Docker：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>systemctl status docker
+sudo docker run hello-world
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="_2-3、同步文件"><a href="#_2-3、同步文件" class="header-anchor">#</a> 2.3、同步文件</h3> <p>接下来，我们需要把本地折腾好的微服务项目源码上传到服务器上，可以选择用 FTP 或 SSH 连接文件手动上传文件。</p> <p>我这里使用 JetBrains 开发工具的远程部署功能，可以配置文件自动上传，步骤如下：</p> <p>1）进入远程部署配置</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928220.png" loading="lazy" class="lazy"></p> <p>2）添加远程部署配置：</p> <p>这里建议大家不要暴露自己的服务器 IP 啊，当你看到本文的时候，其实我已经把服务器的 IP 更换掉了哈哈哈哈哈哈哈哈！</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928130.png" loading="lazy" class="lazy"></p> <p>3）指定连接的服务器配置：</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928000.png" loading="lazy" class="lazy"></p> <p>4）配置本地文件和服务器文件路径映射：</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928314.png" loading="lazy" class="lazy"></p> <p>5）开启自动上传：</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928688.png" loading="lazy" class="lazy"></p> <p>6）首次需要手动上传文件。</p> <p>上传前记得先删除无用的文件，然后右键项目根目录，点击部署上传代码：</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928706.png" loading="lazy" class="lazy"></p> <p>上传成功，在服务器对应路径（/code/yuoj-backend-microservice）下能看到已上传的文件列表：</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928727.png" loading="lazy" class="lazy"></p> <h3 id="_2-4、获取-jar-包"><a href="#_2-4、获取-jar-包" class="header-anchor">#</a> 2.4、获取 jar 包</h3> <p>光把代码上传到服务器还是不够的，因为我们构建 Docker 镜像需要 jar 包。</p> <p>有 2 种方式得到 jar 包：</p> <ol><li>本地执行 <code>mvn package</code> 打好 jar 包，然后再上传</li> <li>服务器上装 Maven，在服务器上打包</li></ol> <p>但是因为 jar 包比较大，频繁改动的话同步速度会比较慢，所以更建议第二种方式，步骤如下：</p> <p>1）安装 Maven：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>sudo yum install maven
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>2）安装好后，执行打包：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>sudo mvn package
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>打包成功：</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928733.png" loading="lazy" class="lazy"></p> <h3 id="_2-5、服务启动"><a href="#_2-5、服务启动" class="header-anchor">#</a> 2.5、服务启动</h3> <p>所有一切准备就绪，接下来就是使用 Docker Compose 命令分别启动环境依赖和业务服务啦。</p> <h4 id="_1-启动环境依赖"><a href="#_1-启动环境依赖" class="header-anchor">#</a> 1）启动环境依赖</h4> <p>先使用 docker compose 一行命令启动环境依赖：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>docker compose -f docker-compose.env.yml up
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>注意：</p> <ol><li>老版本使用 &quot;docker-compose&quot; 替代 &quot;docker compose&quot;</li> <li>如果没有权限，命令前加上 &quot;sudo&quot;</li></ol> <p>然后喝杯咖啡，等待启动即可~</p> <p>启动成功后，我们可以通过公网 IP 来尝试访问服务。</p> <p>先进入到云服务商的服务器配置页，修改服务器的防火墙配置，放通以下端口：</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928933.png" loading="lazy" class="lazy"></p> <p>然后像访问本地服务一样分别去访问 MySQL、Redis、RabbitMQ、Nacos 即可，应该都是成功的。</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928247.png" loading="lazy" class="lazy"></p> <p>由于进程在前台启动会影响我们的操作，所以先按 <code>ctrl + c</code> 退出，加上 <code>-d</code> 参数让容器在后台启动：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>sudo docker compose -f docker-compose.env.yml up -d
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>试着查看下 docker 容器的状态：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>sudo docker stats
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>能够查看到所有容器的资源占用情况：</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928655.png" loading="lazy" class="lazy"></p> <p>实话说，我开始紧张了，不知道 4 G 的内存够不够撑。。。</p> <h4 id="_2-启动业务服务"><a href="#_2-启动业务服务" class="header-anchor">#</a> 2）启动业务服务</h4> <p>确保环境依赖都启动成功后，接下来启动业务服务：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>docker compose -f docker-compose.service.yml up
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>项目全部启动，看得很爽：</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928915.png" loading="lazy" class="lazy"></p> <p>正常来说，应该会启动成功；但如果运气背，可能会有失败，比如我这的网关服务就启动失败了。</p> <p>如果某个服务启动失败，可以再次单独只启动它，比如网关服务：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>sudo docker compose -f docker-compose.service.yml up yuoj-backend-gateway
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="_2-6、测试访问"><a href="#_2-6、测试访问" class="header-anchor">#</a> 2.6、测试访问</h3> <p>最后，像验证本地微服务项目部署一样，访问线上网关的接口文档（ http://你的服务器 IP:8101/doc.html ），依次调用用户注册 =&gt; 登录 =&gt; 获取登录用户信息 =&gt; 创建题目，全部成功~</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928930.png" loading="lazy" class="lazy"></p> <p>最后使用 <code>docker stats</code> 命令查看 Docker 容器的状态，发现总共的内存占用大概 3 G，也就是说 4 G 内存的服务器是完全足够小型微服务项目的部署了~</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928035.png" loading="lazy" class="lazy"></p> <p>至此，微服务项目部署教程就结束了。</p> <h2 id="最后"><a href="#最后" class="header-anchor">#</a> 最后</h2> <p>最后我再问个问题，如果我只有一台 2 G 内存的服务器，能否成功部署这套有 4 个业务服务的项目呢？如果能的话，又应该怎么部署呢？欢迎大家讨论。</p> <p>下图是个小提示：</p> <p><img alt="" data-src="https://pic.yupi.icu/5563/202311071928269.png" loading="lazy" class="lazy"></p> <p>终于写完了这篇 6000 多字的教程，如果觉得本期内容有帮助的话，也欢迎点赞、收藏三连支持，谢谢大家！</p></div> <footer class="page-edit" style="margin:0;"><div class="edit-link"><a href="https://github.com/mydjin/mydjin.github.io/edit/master/编程分享/技术分享/技术实践/快速部署微服务项目，保姆级教程.md" target="_blank" rel="noopener noreferrer">完善页面</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">最近更新:</span> <span class="time">11/5/2024, 4:18:24 AM</span></div></footer> <!----></div> <div class="toc-container-sidebar"><div class="pos-box"><div class="icon-arrow"></div> <div class="scroll-box" style="max-height:86vh"><div style="font-weight:bold;">快速部署微服务项目，保姆级教程</div> <hr> <div class="toc-box"><ul class="toc-sidebar-links"><li><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#项目介绍" class="toc-sidebar-link">项目介绍</a><ul class="toc-sidebar-sub-headers"></ul></li><li><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#传统部署" class="toc-sidebar-link">传统部署</a><ul class="toc-sidebar-sub-headers"></ul></li><li><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#docker-compose-介绍" class="toc-sidebar-link">Docker Compose 介绍</a><ul class="toc-sidebar-sub-headers"></ul></li><li><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#部署流程" class="toc-sidebar-link">部署流程</a><ul class="toc-sidebar-sub-headers"></ul></li><li><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#一、本地部署" class="toc-sidebar-link">一、本地部署</a><ul class="toc-sidebar-sub-headers"><li class="toc-sidebar-sub-header"><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#_1-1、梳理服务部署表格" class="toc-sidebar-link">1.1、梳理服务部署表格</a></li><li class="toc-sidebar-sub-header"><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#_1-2、maven-子父模块打包" class="toc-sidebar-link">1.2、Maven 子父模块打包</a></li><li class="toc-sidebar-sub-header toc-sidebar-depth-4"><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#_1-父模块配置" class="toc-sidebar-link">1）父模块配置</a></li><li class="toc-sidebar-sub-header toc-sidebar-depth-4"><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#_2-子模块配置" class="toc-sidebar-link">2）子模块配置</a></li><li class="toc-sidebar-sub-header"><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#_1-3、dockerfile-编写" class="toc-sidebar-link">1.3、Dockerfile 编写</a></li><li class="toc-sidebar-sub-header toc-sidebar-depth-4"><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#_1-复制-jar-包版" class="toc-sidebar-link">1）复制 jar 包版</a></li><li class="toc-sidebar-sub-header toc-sidebar-depth-4"><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#_2-maven-打包版" class="toc-sidebar-link">2）Maven 打包版</a></li><li class="toc-sidebar-sub-header"><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#_1-4、编写环境依赖配置" class="toc-sidebar-link">1.4、编写环境依赖配置</a></li><li class="toc-sidebar-sub-header toc-sidebar-depth-4"><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#_1-mysql" class="toc-sidebar-link">1）MySQL</a></li><li class="toc-sidebar-sub-header toc-sidebar-depth-4"><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#_2-redis" class="toc-sidebar-link">2）Redis</a></li><li class="toc-sidebar-sub-header toc-sidebar-depth-4"><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#_3-rabbitmq" class="toc-sidebar-link">3）RabbitMQ</a></li><li class="toc-sidebar-sub-header toc-sidebar-depth-4"><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#_4-nacos" class="toc-sidebar-link">4）Nacos</a></li><li class="toc-sidebar-sub-header toc-sidebar-depth-4"><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#完整-docker-compose-文件" class="toc-sidebar-link">完整 Docker Compose 文件</a></li><li class="toc-sidebar-sub-header"><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#_1-5、编写业务服务配置" class="toc-sidebar-link">1.5、编写业务服务配置</a></li><li class="toc-sidebar-sub-header"><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#_1-6、调整程序配置" class="toc-sidebar-link">1.6、调整程序配置</a></li><li class="toc-sidebar-sub-header"><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#_1-7、测试访问" class="toc-sidebar-link">1.7、测试访问</a></li></ul></li><li><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#二、服务器部署" class="toc-sidebar-link">二、服务器部署</a><ul class="toc-sidebar-sub-headers"><li class="toc-sidebar-sub-header"><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#_2-1、准备服务器" class="toc-sidebar-link">2.1、准备服务器</a></li><li class="toc-sidebar-sub-header"><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#_2-2、docker-compose-安装" class="toc-sidebar-link">2.2、Docker Compose 安装</a></li><li class="toc-sidebar-sub-header"><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#_2-3、同步文件" class="toc-sidebar-link">2.3、同步文件</a></li><li class="toc-sidebar-sub-header"><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#_2-4、获取-jar-包" class="toc-sidebar-link">2.4、获取 jar 包</a></li><li class="toc-sidebar-sub-header"><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#_2-5、服务启动" class="toc-sidebar-link">2.5、服务启动</a></li><li class="toc-sidebar-sub-header toc-sidebar-depth-4"><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#_1-启动环境依赖" class="toc-sidebar-link">1）启动环境依赖</a></li><li class="toc-sidebar-sub-header toc-sidebar-depth-4"><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#_2-启动业务服务" class="toc-sidebar-link">2）启动业务服务</a></li><li class="toc-sidebar-sub-header"><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#_2-6、测试访问" class="toc-sidebar-link">2.6、测试访问</a></li></ul></li><li><a href="/%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%A1%B9%E7%9B%AE-%E4%BF%9D%E5%A7%86%E7%BA%A7%E6%95%99%E7%A8%8B/#最后" class="toc-sidebar-link">最后</a><ul class="toc-sidebar-sub-headers"></ul></li></ul></div></div></div></div></div>  <!----> <main class="footer"> <div class="copy-right"><span class="name"> 编程导航   |     </span> <a target="_blank" rel="noreferrer">
+          
+        </a></div></main></main> <aside class="page-sidebar"> <div class="page-side-toolbar"></div>  </aside></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.ca9176e6.js" defer></script><script src="/assets/js/2.90fa9889.js" defer></script><script src="/assets/js/279.b29dc997.js" defer></script>
+  </body>
+</html>
